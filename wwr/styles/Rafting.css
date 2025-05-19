@@ -1,0 +1,151 @@
+/* CSS Variables */
+:root {
+  --primary-color: #055a05; /* forest green */
+  --secondary-color: #f4a261; /* warm sand */
+  --accent1-color: #264653; /* dark slate blue */
+  --accent2-color: #e9c46a; /* light golden yellow */
+  --heading-font: "Merriweather", serif;
+  --body-font: "Roboto", sans-serif;
+}
+
+/* Box Model Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+  font-family: var(--body-font);
+  color: var(--accent1-color);
+  background-color: white;
+}
+
+/* Layout */
+header, main, footer {
+  width: 840px;
+  margin: 0 auto;
+}
+
+/* Typography */
+h1, h2 {
+  font-family: var(--heading-font);
+  color: var(--primary-color);
+}
+
+h1 {
+  font-size: 2rem;
+  text-align: center;
+}
+
+/* Navigation */
+nav {
+  background-color: #eee;
+  padding: 1rem;
+  text-align: center;
+}
+
+nav a {
+  margin: 0 1rem;
+  text-decoration: none;
+  color: #333;
+}
+
+/* Hero Section */
+.hero {
+  position: relative;
+}
+
+.hero img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.hero h1 {
+  position: absolute;
+  top: 20px;
+  width: 100%;
+  padding: 16px;
+  text-align: center;
+  background-color: var(--accent1-color);
+  color: #fff;
+  opacity: 0.8;
+}
+
+/* Hero Article */
+.hero article {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 16px;
+  border-radius: 8px;
+  max-width: 400px;
+}
+
+.hero article img {
+  float: right;
+  width: 125px;
+  margin-left: 12px;
+  border-radius: 4px;
+}
+
+/* General Section and Article Styling */
+section, article, p {
+  margin: 16px;
+  padding: 8px;
+}
+
+/* Main Image Gallery */
+section img {
+  width: 150px;
+  height: auto;
+  margin: 4px;
+}
+
+/* Aside Styling (if needed later) */
+aside {
+  width: 20rem;
+  margin: 1rem;
+  border: 1px solid rgb(0 0 0 / 0.2);
+  padding: 1rem;
+  background-color: #eee;
+  color: #333;
+  text-align: center;
+}
+
+aside img {
+  width: 200px;
+  height: auto;
+}
+
+/* Footer */
+footer {
+  margin-top: 15px;
+  border-top: 1px solid #000;
+  text-align: center;
+  background-color: var(--primary-color);
+  color: #fff;
+  padding: 12px;
+}
+
+footer p {
+  margin: 0;
+}
+
+/* Social Media Icons */
+footer .socialmedia {
+  margin-top: 8px;
+}
+
+footer .socialmedia a {
+  text-decoration: none;
+  margin: 0 8px;
+}
+
+footer .socialmedia img {
+  width: 24px;
+  height: auto;
+}
