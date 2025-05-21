@@ -24,7 +24,7 @@ body {
 
 /* Layout */
 header, main, footer {
-  width: 840px;
+  width: 1024px;
   margin: 0 auto;
 }
 
@@ -105,47 +105,16 @@ section img {
   margin: 4px;
 }
 
-/* Aside Styling (if needed later) */
-aside {
-  width: 20rem;
-  margin: 1rem;
-  border: 1px solid rgb(0 0 0 / 0.2);
-  padding: 1rem;
-  background-color: #eee;
-  color: #333;
-  text-align: center;
-}
-
-aside img {
-  width: 200px;
-  height: auto;
-}
-
-/* Footer */
-footer {
-  margin-top: 15px;
-  border-top: 1px solid #000;
-  text-align: center;
-  background-color: var(--primary-color);
-  color: #fff;
-  padding: 12px;
-}
-
-footer p {
-  margin: 0;
+/* Basic Links Styling */
+a {
+  text-decoration: none;
 }
 
 /* Social Media Icons */
-footer .socialmedia {
-  margin-top: 8px;
-}
-
-footer .socialmedia a {
-  text-decoration: none;
+.socialmedia a {
   margin: 0 8px;
 }
-
-footer .socialmedia img {
+.socialmedia img {
   width: 24px;
   height: auto;
 }
