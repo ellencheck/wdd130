@@ -8,21 +8,17 @@
   --body-font: "Roboto", sans-serif;
 }
 
-/* Box Model Reset */
-* {
+{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* Body Styling */
 body {
   font-family: var(--body-font);
   color: var(--accent1-color);
   background-color: white;
 }
-
-/* Layout */
 header, main, footer {
   width: 840px;
   margin: 0 auto;
@@ -52,7 +48,6 @@ nav a {
   color: #333;
 }
 
-/* Hero Section */
 .hero {
   position: relative;
 }
@@ -74,7 +69,6 @@ nav a {
   opacity: 0.8;
 }
 
-/* Hero Article */
 .hero article {
   position: absolute;
   bottom: 20px;
@@ -92,13 +86,11 @@ nav a {
   border-radius: 4px;
 }
 
-/* General Section and Article Styling */
 section, article, p {
   margin: 16px;
   padding: 8px;
 }
 
-/* Main Image Gallery */
 section img {
   width: 150px;
   height: auto;
