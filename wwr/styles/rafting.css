@@ -23,9 +23,9 @@ body {
 }
 
 /* Layout */
-header, main, footer {
-  width: 1024px;
-  margin: 0 auto;
+header, main, footer {  
+max-width: 1200px;  
+margin: 0 auto;
 }
 
 /* Typography */
