@@ -1,6 +1,6 @@
 /* CSS Variables */
 :root {
-  --primary-color: #055a05;
+  --primary-color: #055a05; /* зелёный цвет для header и footer */
   --secondary-color: #f4a261;
   --accent1-color: #264653;
   --accent2-color: #e9c46a;
@@ -30,74 +30,97 @@ footer {
   margin: 0 auto;
 }
 
+/* Header with Grid */
 header {
   background-color: var(--primary-color);
-  color: white;                          
+  color: white;
   display: grid;
   grid-template-columns: auto 1fr auto;
   align-items: center;
-  padding: 1rem;
+  padding: 1rem 2rem;
+}
+
+/* Logo */
+header img {
+  height: 80px;
+  width: auto;
+}
+
+/* Header Title */
+header h1 {
+  font-family: var(--heading-font);
+  font-weight: 900;
+  font-size: 1.8rem;
+  color: white;
+  text-align: left;
+  padding-left: 1rem;
 }
 
 /* Navigation with Flexbox */
 nav ul {
   display: flex;
-  justify-content: center;
-  gap: 1rem;
+  justify-content: flex-end;
+  gap: 2rem;
   list-style: none;
-  padding: 0;
+}
+
+nav ul li {
   margin: 0;
 }
 
-
 nav a {
   text-decoration: none;
-  color: #333;
-  font-weight: 600;
+  color: white;
+  font-weight: 700;
+  font-size: 1rem;
+  padding: 0.25rem 0.5rem;
+  transition: background-color 0.3s ease;
 }
 
-/* Typography */
-h1,
-h2 {
-  font-family: var(--heading-font);
+nav a:hover,
+nav a.active {
+  background-color: var(--secondary-color);
   color: var(--primary-color);
-}
-
-h1 {
-  font-size: 2rem;
-  text-align: center;
+  border-radius: 4px;
 }
 
 /* Hero Section */
 .hero {
   position: relative;
+  margin-top: 2rem;
 }
 
 .hero img {
   display: block;
   width: 100%;
   height: auto;
+  border-radius: 8px;
 }
 
 .hero h1 {
   position: absolute;
   top: 20px;
-  width: 100%;
-  padding: 16px;
-  text-align: center;
+  left: 50%;
+  transform: translateX(-50%);
   background-color: var(--accent1-color);
-  color: #fff;
-  opacity: 0.8;
+  color: white;
+  padding: 1rem 2rem;
+  opacity: 0.85;
+  border-radius: 6px;
+  font-family: var(--heading-font);
 }
 
+/* Hero Article */
 .hero article {
   position: absolute;
   bottom: 20px;
   left: 20px;
   background-color: rgba(255, 255, 255, 0.9);
-  padding: 16px;
+  padding: 1rem;
   border-radius: 8px;
   max-width: 400px;
+  font-size: 1rem;
+  color: var(--accent1-color);
 }
 
 .hero article img {
@@ -107,19 +130,17 @@ h1 {
   border-radius: 4px;
 }
 
-/* General Section and Article Styling */
-section,
-article,
-p {
-  margin: 16px;
-  padding: 8px;
+/* Sections */
+section {
+  margin: 2rem 1rem;
+  padding: 1.5rem;
+  border-radius: 8px;
 }
 
 /* History Section */
 section:nth-of-type(1) {
   background-color: #f9f9f9;
-  padding: 2rem;
-  border-radius: 8px;
+  color: var(--accent1-color);
 }
 
 /* Adventure Gallery Section */
@@ -127,8 +148,6 @@ section:nth-of-type(2) {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  align-items: stretch;
-  padding: 2rem;
   gap: 1rem;
 }
 
@@ -149,24 +168,35 @@ figcaption {
   margin-top: 0.5rem;
   font-size: 0.9rem;
   color: var(--accent1-color);
+  font-style: italic;
 }
 
+/* Footer */
 footer {
-  display: flex;
-  justify-content: space-between; /* распределяет содержимое по краям */
-  align-items: center;
-  padding: 1rem 2rem;
   background-color: var(--primary-color);
   color: white;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.9rem;
+  font-family: var(--body-font);
 }
 
+/* Social Media Icons */
 .socialmedia {
-  display: flex;            
-  gap: 0.5rem;              
-  justify-content: flex-end; 
+  display: flex;
+  gap: 1rem;
 }
 
 .socialmedia img {
   width: 24px;
   height: auto;
+  filter: invert(1); /* белый цвет иконок */
+  transition: filter 0.3s ease;
 }
+
+.socialmedia a:hover img {
+  filter: invert(0.5) sepia(1) saturate(5) hue-rotate(90deg);
+}
+
