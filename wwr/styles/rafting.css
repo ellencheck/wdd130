@@ -190,7 +190,7 @@ section {
 
 footer {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-between; 
   align-items: center;
   padding: 1rem 2rem;
   background-color: var(--primary-color);
@@ -198,11 +198,10 @@ footer {
 }
 
 .socialmedia {
-  display: flex;
-  gap: 0.5rem;
-  justify-content: flex-end;
+  display: flex;           
+  gap: 0.5rem;              
+  justify-content: flex-end; 
 }
-
 .socialmedia img {
   width: 24px;
   height: auto;
