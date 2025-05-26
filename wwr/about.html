@@ -3,29 +3,17 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>About Us - White Water Rafting</title>
-  <meta name="description" content="Learn more about our White Water Rafting company, our history, and mission." />
-  <meta name="author" content="Alina Chekalova" />
-
-  <!-- Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700;900&family=Roboto:wght@400;700&display=swap"
-    rel="stylesheet"
-  />
-
-  <!-- CSS -->
-  <link rel="stylesheet" href="styles/rafting.css" />
+  <title>About Us - Rafting Adventures</title>
+  <link rel="stylesheet" href="rafting.css" />
 </head>
 <body>
   <header>
-    <img src="images/logo.png" alt="Rafting Site Logo" />
-    <h1>White Water Rafting</h1>
+    <img src="images/logo.png" alt="Rafting Logo" />
+    <h1>Rafting Adventures</h1>
     <nav>
       <ul>
         <li><a href="index.html">Home</a></li>
-        <li><a href="about.html" class="active">About Us</a></li>
+        <li><a href="about.html" class="current">About Us</a></li>
         <li><a href="trips.html">Trips</a></li>
         <li><a href="contact.html">Contact</a></li>
       </ul>
@@ -33,63 +21,49 @@
   </header>
 
   <main>
-    <div class="hero">
-      <img src="images/hero.jpg" alt="Rafting Adventure" />
-      <h1>White Water Rafting Co.</h1>
-      <article>
-        <h2>Our Mission</h2>
-        <img src="images/happy-client.jpg" alt="Happy client enjoying rafting" />
-        <p>
-          Our mission is to provide thrilling, safe, and unforgettable rafting experiences. We strive to connect people with nature through adventure,
-          while upholding the highest standards of safety and environmental responsibility.
-        </p>
-      </article>
-    </div>
-
-    <section>
-      <h2>History</h2>
+    <section id="history">
+      <h2>Our History</h2>
       <p>
-        Founded in 1998, our company has led over 10,000 successful trips, earning a reputation for excellence in outdoor adventure tourism. What started
-        as a small local operation with just a handful of rafts and passionate guides has grown into a trusted name in rafting experiences. Over the
-        years, we have expanded our routes, improved our equipment, and trained a team of certified professionals who share a deep respect for nature
-        and a commitment to guest safety. Our long-standing presence in the industry is a testament to our dedication, consistency, and the
-        unforgettable memories we help create for adventurers from all over the world.
+        Founded in 1998, Rafting Adventures has been offering thrilling and safe
+        whitewater rafting experiences for over 20 years. Our expert guides and
+        passion for adventure ensure an unforgettable experience.
       </p>
+      <!-- Добавь еще текст по необходимости -->
     </section>
 
-    <section>
-      <h2>Adventure Awaits You!</h2>
-      <figure>
-        <img src="images/rafting1.jpg" alt="Rafting 1" />
-        <figcaption>Los Dientes del Diablo</figcaption>
-      </figure>
-      <figure>
-        <img src="images/rafting2.jpg" alt="Rafting 2" />
-        <figcaption>Big Mallard</figcaption>
-      </figure>
-      <figure>
-        <img src="images/rafting3.jpg" alt="Rafting 3" />
-        <figcaption>Half Day Adventure</figcaption>
-      </figure>
-      <figure>
-        <img src="images/rafting4.jpg" alt="Rafting 4" />
-        <figcaption>Rapid Thunder</figcaption>
-      </figure>
-      <figure>
-        <img src="images/rafting5.jpg" alt="Rafting 5" />
-        <figcaption>Devil's Washbowl</figcaption>
-      </figure>
+    <section id="adventures">
+      <h2>Our Adventures</h2>
+      <div class="adventure-gallery">
+        <figure>
+          <img src="images/los-dientes.jpg" alt="Los Dientes del Diablo" />
+          <figcaption>Los Dientes del Diablo</figcaption>
+        </figure>
+        <figure>
+          <img src="images/big-mallard.jpg" alt="Big Mallard" />
+          <figcaption>Big Mallard</figcaption>
+        </figure>
+        <figure>
+          <img src="images/half-day.jpg" alt="Half Day Adventure" />
+          <figcaption>Half Day Adventure</figcaption>
+        </figure>
+        <figure>
+          <img src="images/white-water.jpg" alt="White Water Rapids" />
+          <figcaption>White Water Rapids</figcaption>
+        </figure>
+        <figure>
+          <img src="images/river-explorer.jpg" alt="River Explorer" />
+          <figcaption>River Explorer</figcaption>
+        </figure>
+      </div>
     </section>
   </main>
 
   <footer>
-    <p>&copy; 2025 White Water Rafting Co. | Alina Chekalova</p>
-    <nav class="socialmedia">
-      <a href="https://facebook.com"><img src="images/facebook.svg" alt="Facebook" /></a>
-      <a href="https://twitter.com"><img src="images/twitter.svg" alt="Twitter" /></a>
-      <a href="https://instagram.com"><img src="images/instagram.svg" alt="Instagram" /></a>
-    </nav>
+    <div class="social-icons">
+      <a href="#"><img src="images/facebook.png" alt="Facebook" /></a>
+      <a href="#"><img src="images/twitter.png" alt="Twitter" /></a>
+      <a href="#"><img src="images/instagram.png" alt="Instagram" /></a>
+    </div>
   </footer>
 </body>
 </html>
-
