@@ -32,11 +32,12 @@ footer {
 
 /* Header with Grid */
 header {
+  background-color: #004d40; /* Зелёный */
+  color: white;
   display: grid;
-  grid-template-columns: auto 1fr;
+  grid-template-columns: auto 1fr auto;
   align-items: center;
   padding: 1rem;
-  gap: 1rem;
 }
 
 /* Logo */
