@@ -75,7 +75,6 @@ nav ul li a.current {
   color: #004d00;
 }
 
-/* Adventures Section - 5 изображений в строку */
 #adventures {
   padding: 20px;
   background-color: #e6f2e6;
@@ -84,27 +83,31 @@ nav ul li a.current {
 .adventure-gallery {
   display: flex;
   justify-content: space-between;
-  gap: 10px;
+  gap: 15px; /* Расстояние между картинками */
+  flex-wrap: nowrap; /* запрет переноса, чтобы картинки всегда в ряд */
 }
 
 .adventure-gallery figure {
-  flex: 1;
+  flex: 1 1 18%; /* Дает каждой картинке примерно 18% ширины, сжимаемость и рост */
   margin: 0;
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .adventure-gallery img {
-  width: 100%;
-  height: auto;
+  width: 100%; /* картинка занимает всю ширину фигуры */
+  height: auto; /* сохраняем пропорции */
   border-radius: 8px;
+  object-fit: cover; /* подрезает, если нужно */
 }
 
 .adventure-gallery figcaption {
-  margin-top: 5px;
+  margin-top: 8px;
   font-weight: bold;
   color: #004d00;
+  text-align: center;
 }
-
 /* Footer - соцсети по правому краю горизонтально */
 footer {
   background-color: #004d00;
