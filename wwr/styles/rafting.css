@@ -17,6 +17,7 @@ body {
   font-family: var(--font-body);
   color: var(--text-color);
   background: var(--white);
+  line-height: 1.5;
 }
 
 header {
@@ -31,6 +32,7 @@ header {
 
 header img {
   height: 80px;
+  width: auto;
 }
 
 header h1 {
@@ -54,7 +56,8 @@ nav a {
   font-size: 1rem;
 }
 
-nav a:hover {
+nav a:hover,
+nav a.current {
   text-decoration: underline;
 }
 
@@ -62,41 +65,6 @@ main {
   max-width: 1200px;
   margin: 2rem auto;
   padding: 0 1rem;
-}
-
-.hero img {
-  width: 100%;
-  height: auto;
-  border-radius: 8px;
-}
-
-.hero h1 {
-  position: absolute;
-  top: 1rem;
-  left: 50%;
-  transform: translateX(-50%);
-  color: var(--white);
-  background-color: rgba(0, 0, 0, 0.5);
-  padding: 0.5rem 1rem;
-  border-radius: 4px;
-  font-family: var(--font-heading);
-}
-
-.hero article {
-  position: absolute;
-  bottom: 1rem;
-  left: 1rem;
-  background-color: rgba(255 255 255 / 0.9);
-  padding: 1rem;
-  border-radius: 6px;
-  max-width: 380px;
-}
-
-.hero article img {
-  float: right;
-  width: 125px;
-  margin-left: 12px;
-  border-radius: 6px;
 }
 
 /* History Section */
@@ -107,7 +75,6 @@ section.history {
   margin-bottom: 2rem;
   color: var(--text-color);
   font-size: 1rem;
-  line-height: 1.5;
 }
 
 /* Adventures Section */
@@ -147,7 +114,7 @@ footer {
   color: var(--white);
   padding: 1rem 2rem;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
   align-items: center;
 }
 
