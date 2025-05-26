@@ -15,188 +15,116 @@
   box-sizing: border-box;
 }
 
-/* Body Styling */
 body {
-  font-family: var(--body-font);
-  color: var(--accent1-color);
-  background-color: #fff;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
-/* Layout */
-header,
-main,
-footer {
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-/* Header with Grid */
+/* HEADER - CSS Grid с 3 колонками */
 header {
-  background-color: var(--primary-color);
-  color: white;
   display: grid;
   grid-template-columns: auto 1fr auto;
   align-items: center;
-  padding: 1rem 2rem;
+  background-color: #004d00; /* темно-зеленый */
+  padding: 10px 20px;
+  color: white;
 }
 
-/* Logo */
 header img {
-  height: 80px;
-  width: auto;
+  width: 80px;
+  height: auto;
 }
 
-/* Header Title */
 header h1 {
-  font-family: var(--heading-font);
-  font-weight: 900;
+  margin: 0 20px;
   font-size: 1.8rem;
-  color: white;
-  text-align: left;
-  padding-left: 1rem;
 }
 
-/* Navigation with Flexbox */
+/* NAV - Flexbox */
 nav ul {
-  display: flex;
-  justify-content: flex-end;
-  gap: 2rem;
   list-style: none;
-}
-
-nav ul li {
+  display: flex;
+  gap: 15px;
   margin: 0;
+  padding: 0;
 }
 
-nav a {
-  text-decoration: none;
+nav ul li a {
   color: white;
-  font-weight: 700;
-  font-size: 1rem;
-  padding: 0.25rem 0.5rem;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 8px 12px;
+  border-radius: 4px;
   transition: background-color 0.3s ease;
 }
 
-nav a:hover,
-nav a.active {
-  background-color: var(--secondary-color);
-  color: var(--primary-color);
-  border-radius: 4px;
-}
-
-/* Hero Section */
-.hero {
-  position: relative;
-  margin-top: 2rem;
-}
-
-.hero img {
-  display: block;
-  width: 100%;
-  height: auto;
-  border-radius: 8px;
-}
-
-.hero h1 {
-  position: absolute;
-  top: 20px;
-  left: 50%;
-  transform: translateX(-50%);
-  background-color: var(--accent1-color);
-  color: white;
-  padding: 1rem 2rem;
-  opacity: 0.85;
-  border-radius: 6px;
-  font-family: var(--heading-font);
-}
-
-/* Hero Article */
-.hero article {
-  position: absolute;
-  bottom: 20px;
-  left: 20px;
-  background-color: rgba(255, 255, 255, 0.9);
-  padding: 1rem;
-  border-radius: 8px;
-  max-width: 400px;
-  font-size: 1rem;
-  color: var(--accent1-color);
-}
-
-.hero article img {
-  float: right;
-  width: 125px;
-  margin-left: 12px;
-  border-radius: 4px;
-}
-
-/* Sections */
-section {
-  margin: 2rem 1rem;
-  padding: 1.5rem;
-  border-radius: 8px;
+nav ul li a:hover,
+nav ul li a.current {
+  background-color: #2ecc40; /* светло-зеленый */
+  color: #004d00;
 }
 
 /* History Section */
-section:nth-of-type(1) {
-  background-color: #f9f9f9;
-  color: var(--accent1-color);
+#history {
+  padding: 40px 20px;
+  background-color: #f0f8f0;
 }
 
-/* Adventure Gallery Section */
-section:nth-of-type(2) {
+#history h2 {
+  color: #004d00;
+}
+
+/* Adventures Section - 5 изображений в строку */
+#adventures {
+  padding: 20px;
+  background-color: #e6f2e6;
+}
+
+.adventure-gallery {
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-between;
-  gap: 1rem;
+  gap: 10px;
 }
 
-section:nth-of-type(2) figure {
-  flex: 1 1 calc(20% - 1rem);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.adventure-gallery figure {
+  flex: 1;
+  margin: 0;
+  text-align: center;
 }
 
-section:nth-of-type(2) img {
+.adventure-gallery img {
   width: 100%;
   height: auto;
-  border-radius: 6px;
+  border-radius: 8px;
 }
 
-figcaption {
-  margin-top: 0.5rem;
-  font-size: 0.9rem;
-  color: var(--accent1-color);
-  font-style: italic;
+.adventure-gallery figcaption {
+  margin-top: 5px;
+  font-weight: bold;
+  color: #004d00;
 }
 
-/* Footer */
+/* Footer - соцсети по правому краю горизонтально */
 footer {
-  background-color: var(--primary-color);
-  color: white;
-  padding: 1rem 2rem;
+  background-color: #004d00;
+  padding: 15px 20px;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
   align-items: center;
-  font-size: 0.9rem;
-  font-family: var(--body-font);
 }
 
-/* Social Media Icons */
-.socialmedia {
-  display: flex;
-  gap: 1rem;
-}
-
-.socialmedia img {
-  width: 24px;
-  height: auto;
-  filter: invert(1); /* белый цвет иконок */
+footer .social-icons a img {
+  width: 32px;
+  height: 32px;
+  margin-left: 15px;
+  filter: brightness(0) invert(1); /* белые иконки */
   transition: filter 0.3s ease;
 }
 
-.socialmedia a:hover img {
-  filter: invert(0.5) sepia(1) saturate(5) hue-rotate(90deg);
+footer .social-icons a:hover img {
+  filter: brightness(0) invert(0.6);
 }
+
+
 
