@@ -42,13 +42,13 @@ header img {
   margin: 0;
 }
 
-header h1 {
-  font-family: var(--heading-font);
-  font-size: 1.8rem;
-  color: white;
-  margin: 0;
+.hero h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  color: darkgreen;
+  text-shadow: 1px 1px 2px #ccc;
   text-align: center;
-  /* Центрируем текст внутри своей колонки */
+  margin-bottom: 1.5rem;
 }
 
 nav {
