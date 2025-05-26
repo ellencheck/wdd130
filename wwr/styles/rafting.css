@@ -30,19 +30,13 @@ footer {
   margin: 0 auto;
 }
 
-/* Header with Grid */
 header {
-  background-color: 
-  color: white;
+  background-color: var(--primary-color);
+  color: white;                          
   display: grid;
   grid-template-columns: auto 1fr auto;
   align-items: center;
   padding: 1rem;
-}
-
-/* Logo */
-header img {
-  height: 80px;
 }
 
 /* Navigation with Flexbox */
