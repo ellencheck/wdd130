@@ -27,26 +27,37 @@ footer {
 }
 
 header {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: auto 1fr auto; /* 3 колонки: логотип, заголовок, навигация */
   align-items: center;
   padding: 1rem 2rem;
   background-color: var(--primary-color);
   color: white;
+  gap: 1rem; /* небольшой отступ между колонками */
 }
 
 header img {
   height: 80px;
-  margin-bottom: 1rem;
+  /* margin-bottom убрать, чтобы не было отступа снизу */
+  margin: 0;
+}
+
+header h1 {
+  font-family: var(--heading-font);
+  font-size: 1.8rem;
+  color: white;
+  margin: 0;
+  text-align: center;
+  /* Центрируем текст внутри своей колонки */
 }
 
 nav {
-  width: 100%;
+  /* Навигация справа */
 }
 
 .nav-menu {
   display: flex;
-  justify-content: center;
+  justify-content: flex-end; /* меню справа */
   gap: 2rem;
   list-style: none;
   padding: 0;
