@@ -1,3 +1,4 @@
+/* CSS Variables */
 :root {
   --primary-color: #055a05;
   --secondary-color: #f4a261;
@@ -7,18 +8,21 @@
   --body-font: "Roboto", sans-serif;
 }
 
+/* Box Model Reset */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+/* Body Styling */
 body {
   font-family: var(--body-font);
   color: var(--accent1-color);
   background-color: white;
 }
 
+/* Layout */
 header,
 main,
 footer {
@@ -26,56 +30,36 @@ footer {
   margin: 0 auto;
 }
 
+/* Header with Grid */
 header {
   display: grid;
-  grid-template-columns: auto 1fr auto; /* 3 колонки: логотип, заголовок, навигация */
+  grid-template-columns: auto 1fr;
   align-items: center;
-  padding: 1rem 2rem;
-  background-color: var(--primary-color);
-  color: white;
-  gap: 1rem; /* небольшой отступ между колонками */
+  padding: 1rem;
+  gap: 1rem;
 }
 
+/* Logo */
 header img {
   height: 80px;
-  /* margin-bottom убрать, чтобы не было отступа снизу */
-  margin: 0;
 }
 
-.hero h1 {
-  font-size: 3rem;
-  font-weight: 700;
-  color: darkgreen;
-  text-shadow: 1px 1px 2px #ccc;
-  text-align: center;
-  margin-bottom: 1.5rem;
-}
-
+/* Navigation with Flexbox */
 nav {
-  /* Навигация справа */
-}
-
-.nav-menu {
   display: flex;
-  justify-content: flex-end; /* меню справа */
-  gap: 2rem;
-  list-style: none;
-  padding: 0;
-  margin: 0;
+  justify-content: center;
+  gap: 1rem;
+  background-color: #eee;
+  padding: 1rem;
 }
 
-.nav-menu a {
+nav a {
   text-decoration: none;
-  color: white;
-  font-weight: 700;
-  font-size: 1.1rem;
-  transition: color 0.3s ease;
+  color: #333;
+  font-weight: 600;
 }
 
-.nav-menu a:hover {
-  color: var(--secondary-color);
-}
-
+/* Typography */
 h1,
 h2 {
   font-family: var(--heading-font);
@@ -87,6 +71,7 @@ h1 {
   text-align: center;
 }
 
+/* Hero Section */
 .hero {
   position: relative;
 }
@@ -106,8 +91,6 @@ h1 {
   background-color: var(--accent1-color);
   color: #fff;
   opacity: 0.8;
-  font-size: 2.5rem;
-  font-weight: bold;
 }
 
 .hero article {
@@ -127,6 +110,7 @@ h1 {
   border-radius: 4px;
 }
 
+/* General Section and Article Styling */
 section,
 article,
 p {
@@ -134,12 +118,14 @@ p {
   padding: 8px;
 }
 
+/* History Section */
 section:nth-of-type(1) {
   background-color: #f9f9f9;
   padding: 2rem;
   border-radius: 8px;
 }
 
+/* Adventure Gallery Section */
 section:nth-of-type(2) {
   display: flex;
   flex-wrap: wrap;
@@ -168,43 +154,21 @@ figcaption {
   color: var(--accent1-color);
 }
 
-.AdventureAboutUs,
-.AdventureSurveyingQ {
-  max-width: 800px;
-  margin: 2rem auto;
-  text-align: center;
-}
-
-.AdventureAboutUs img,
-.AdventureSurveyingQ img {
-  display: block;
-  margin: 1rem auto;
-  max-width: 100%;
-  height: auto;
-  border-radius: 8px;
-}
-
-section {
-  margin-bottom: 3rem;
-}
-
+/* Social Media Icons */
 footer {
   display: flex;
-  justify-content: space-between; 
+  justify-content: space-between;
   align-items: center;
-  padding: 1rem 2rem;
-  background-color: var(--primary-color);
-  color: white;
+  padding: 1rem;
 }
 
 .socialmedia {
-  display: flex;           
-  gap: 0.5rem;              
-  justify-content: flex-end; 
+  display: flex;
+  gap: 0.5rem;
+  justify-content: flex-end;
 }
+
 .socialmedia img {
   width: 24px;
   height: auto;
-  filter: brightness(0) invert(1);
 }
-
