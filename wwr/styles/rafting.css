@@ -156,18 +156,19 @@ figcaption {
   color: var(--accent1-color);
 }
 
-/* Social Media Icons */
 footer {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-between; /* распределяет содержимое по краям */
   align-items: center;
-  padding: 1rem;
+  padding: 1rem 2rem;
+  background-color: var(--primary-color);
+  color: white;
 }
 
 .socialmedia {
-  display: flex;
-  gap: 0.5rem;
-  justify-content: flex-end;
+  display: flex;            
+  gap: 0.5rem;              
+  justify-content: flex-end; 
 }
 
 .socialmedia img {
