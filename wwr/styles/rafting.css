@@ -217,9 +217,11 @@ footer {
 /* Employee Section */
 .employee-grid {
   display: flex;
-  flex-wrap: wrap;
-  gap: 2rem;
+  flex-direction: row;
   justify-content: center;
+  align-items: flex-start;
+  gap: 2rem;
+  flex-wrap: wrap;
   margin-top: 1rem;
 }
 
