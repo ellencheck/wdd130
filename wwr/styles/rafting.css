@@ -81,9 +81,9 @@ h1 {
   width: 100%;
   padding: 16px;
   text-align: center;
-  background-color: var(--accent1-color);
+  background-color: rgba(38, 70, 83, 0.8); /* var(--accent1-color) в rgba с прозрачностью */
   color: #fff;
-  opacity: 0.8;
+  /* opacity: 0.8;  — убрать */
 }
 
 .hero article {
