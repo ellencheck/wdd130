@@ -24,8 +24,9 @@ body {
 
 /* Layout */
 header, main, footer {  
-max-width: 1200px;  
-margin: 0 auto;
+  max-width: 1200px;  
+  margin: 0 auto;
+  padding: 0 1rem;
 }
 
 /* Typography */
@@ -37,24 +38,45 @@ h1, h2 {
 h1 {
   font-size: 2rem;
   text-align: center;
+  margin: 1rem 0;
+}
+
+h2 {
+  font-size: 1.5rem;
+  margin: 1rem 0;
 }
 
 /* Navigation */
 nav {
   background-color: #eee;
-  padding: 1rem;
-  text-align: center;
+  padding: 1rem 0;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  list-style: none;
 }
 
 nav a {
-  margin: 0 1rem;
-  text-decoration: none;
   color: #333;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+nav a:hover,
+nav a:focus {
+  color: var(--primary-color);
+  outline: none;
 }
 
 /* Hero Section */
 .hero {
   position: relative;
+  margin-bottom: 2rem;
 }
 
 .hero img {
@@ -67,22 +89,24 @@ nav a {
   position: absolute;
   top: 20px;
   width: 100%;
-  padding: 16px;
+  padding: 16px 0;
   text-align: center;
   background-color: var(--accent1-color);
   color: #fff;
-  opacity: 0.8;
+  opacity: 0.85;
+  font-size: 2.5rem;
+  font-weight: 700;
 }
 
-/* Hero Article */
 .hero article {
   position: absolute;
   bottom: 20px;
   left: 20px;
-  background-color: rgba(255, 255, 255, 0.9);
+  background-color: rgba(255, 255, 255, 0.95);
   padding: 16px;
   border-radius: 8px;
   max-width: 400px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
 
 .hero article img {
@@ -92,10 +116,11 @@ nav a {
   border-radius: 4px;
 }
 
-/* General Section and Article Styling */
+/* Sections and Articles */
 section, article, p {
-  margin: 16px;
-  padding: 8px;
+  margin: 16px 0;
+  padding: 0 8px;
+  line-height: 1.5;
 }
 
 /* Main Image Gallery */
@@ -103,27 +128,60 @@ section img {
   width: 150px;
   height: auto;
   margin: 4px;
+  border-radius: 8px;
+  box-shadow: 0 1px 5px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
 }
 
-/* Basic Links Styling */
+section img:hover {
+  transform: scale(1.05);
+}
+
+/* Links */
 a {
   text-decoration: none;
+  color: var(--primary-color);
+  transition: color 0.3s ease;
+}
+
+a:hover,
+a:focus {
+  color: var(--secondary-color);
+  outline: none;
 }
 
 /* Social Media Icons */
-.socialmedia a {
-  margin: 0 8px;
-}
-.socialmedia img {
-  width: 24px;
-  height: auto;
+.socialmedia {
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+  padding: 1rem 0;
 }
 
+.socialmedia a {
+  display: inline-block;
+}
+
+.socialmedia img {
+  width: 24px;
+  height: 24px;
+  display: block;
+  transition: filter 0.3s ease;
+}
+
+.socialmedia a:hover img,
+.socialmedia a:focus img {
+  filter: brightness(0.7);
+  outline: none;
+}
+
+/* Contact Form */
 .contact-form {
   background-color: #f9f9f9;
   padding: 1.5rem;
   border-radius: 8px;
   margin-bottom: 2rem;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
 }
 
 .contact-form form {
@@ -134,6 +192,7 @@ a {
 .contact-form label {
   font-weight: bold;
   color: #333;
+  display: block;
 }
 
 .contact-form input,
@@ -143,6 +202,8 @@ a {
   border-radius: 4px;
   font-family: var(--body-font);
   font-size: 1rem;
+  width: 100%;
+  resize: vertical;
 }
 
 .contact-form fieldset {
@@ -164,20 +225,26 @@ a {
   border-radius: 4px;
   font-size: 1rem;
   cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
-.contact-form button:hover {
+.contact-form button:hover,
+.contact-form button:focus {
   background-color: #044804;
+  outline: none;
 }
 
+/* Map */
 .map {
   width: 100%;
   height: 400px;
   border: 0;
   border-radius: 8px;
   margin-bottom: 2rem;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
 }
 
+/* Employee Grid */
 .employee-grid {
   display: flex;
   flex-wrap: wrap;
@@ -187,7 +254,7 @@ a {
 }
 
 .employee-grid figure {
-  flex: 0 0 180px; /* фиксированная ширина блока с фото */
+  flex: 0 0 180px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -204,8 +271,8 @@ a {
 
 .employee-grid figure img {
   width: 100%;
-  height: 260px; /* фиксированная высота для вертикального формата */
-  object-fit: cover; /* чтобы изображение не искажалось, а обрезалось */
+  height: 260px;
+  object-fit: cover;
   border-radius: 8px;
   display: block;
 }
@@ -214,6 +281,38 @@ a {
   margin-top: 0.5rem;
   font-weight: 600;
   text-align: center;
-  color: #2a5d84; /* например, синий цвет */
+  color: #2a5d84;
   user-select: none;
+}
+
+/* History and Adventures Sections */
+/* Общая сетка для картинок с подписями */
+.history, .adventures {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: center;
+  padding: 1rem 0;
+}
+
+.history figure, .adventures figure {
+  width: 180px;
+  background-color: #f8f8f8;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  padding: 0.8rem;
+  text-align: center;
+  transition: box-shadow 0.3s ease;
+}
+
+.history figure:hover, .adventures figure:hover {
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+.history figure img, .adventures figure img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 0.5rem;
 }
