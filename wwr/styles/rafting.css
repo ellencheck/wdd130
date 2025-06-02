@@ -301,3 +301,7 @@ footer {
 .contact-form button:hover {
   background-color: #048904;     /* Темнее при наведении */
 }
+h1, h2, h3, h4, h5, h6 {
+  color: #055a05 !important;
+  font-family: var(--heading-font) !important;
+}
