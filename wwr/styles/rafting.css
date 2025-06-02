@@ -227,6 +227,12 @@ footer {
   margin-bottom: 2rem;
 }
 
+.map-iframe {
+  border: 0;
+  max-width: 800px;
+  margin: 0 auto;
+  display: block;
+  
 /* Employee Section */
 .employee-grid {
   display: flex;
