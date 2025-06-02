@@ -114,19 +114,20 @@ section {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 1.5rem;
+  gap: 1rem;
   margin-top: 1rem;
 }
 
 .adventure-gallery figure {
   width: 200px;
+  margin: 0;
   text-align: center;
 }
 
 .adventure-gallery img {
   width: 100%;
   height: auto;
-  border-radius: 6px;
+  border-radius: 5px;
 }
 
 figure {
