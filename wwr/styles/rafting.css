@@ -216,23 +216,21 @@ footer {
 
 /* Employee Section */
 .employees {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 2rem;
-  padding: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 20px;
+  padding: 20px 0;
 }
 
-.employees figure png {
-  width: 100%;
-  max-width: 250px;
+.employees figure {
+  text-align: center;
+  width: 200px;
+}
+
+.employees img {
+  max-width: 100%;
   height: auto;
   border-radius: 8px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-}
-
-.employees figcaption {
-  margin-top: 0.5rem;
-  color: var(--accent1-color);
-  font-weight: bold;
-  font-size: 1rem;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
