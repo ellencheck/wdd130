@@ -209,6 +209,10 @@ footer {
   background-color: #044804;
 }
 
+.contact-form button:hover {
+  background-color: #044804;
+}
+
 /* Embedded Map Styling */
 .map {
   width: 100%;
@@ -220,17 +224,17 @@ footer {
 
 .employee-container {
   display: flex;
-  justify-content: flex-start; /* Выравнивание слева, можно изменить на center */
-  flex-wrap: nowrap;           /* Элементы в одной строке */
-  gap: 20px;                   /* Расстояние между сотрудниками */
+  justify-content: flex-start; 
+  flex-wrap: nowrap;           
+  gap: 20px;                   
   margin-top: 20px;
-  overflow-x: auto;            /* Горизонтальный скролл при необходимости */
-  padding-bottom: 10px;        /* Отступ снизу для скролла */
+  overflow-x: auto;           
+  padding-bottom: 10px;        
 }
 
 .employee-container figure {
   text-align: center;
-  width: 200px;                /* Фиксированная ширина каждого сотрудника */
+  width: 200px;               
 }
 
 .employee-container img {
