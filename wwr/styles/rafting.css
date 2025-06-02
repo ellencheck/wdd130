@@ -1,54 +1,34 @@
+/* CSS Variables */
 :root {
-  --primary-color: #055a05;
-  --secondary-color: #f4a261;
-  --accent1-color: #264653;
-  --accent2-color: #e9c46a;
+  --primary-color: #055a05; /* forest green */
+  --secondary-color: #f4a261; /* warm sand */
+  --accent1-color: #264653; /* dark slate blue */
+  --accent2-color: #e9c46a; /* light golden yellow */
   --heading-font: "Merriweather", serif;
   --body-font: "Roboto", sans-serif;
 }
 
+/* Box Model Reset */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+/* Body Styling */
 body {
-  background-color: #eef;
-  font-family: 'Roboto', sans-serif;
+  font-family: var(--body-font);
+  color: var(--accent1-color);
+  background-color: white;
 }
 
-header {
-  display: grid;
-  grid-template-columns: auto 1fr;
-  align-items: center;
-  padding: 1rem;
-  gap: 1rem;
-  max-width: 1200px;
-  margin: 0 auto;
+/* Layout */
+header, main, footer {  
+max-width: 1200px;  
+margin: 0 auto;
 }
 
-header img {
-  height: 60px;
-}
-
-nav {
-  display: flex;
-  justify-content: flex-end;
-  gap: 1.5rem;
-}
-
-nav a {
-  text-decoration: none;
-  color: #333;
-  font-weight: bold;
-}
-
-main {
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
+/* Typography */
 h1, h2 {
   font-family: var(--heading-font);
   color: var(--primary-color);
@@ -59,42 +39,81 @@ h1 {
   text-align: center;
 }
 
-section {
+/* Navigation */
+nav {
+  background-color: #eee;
+  padding: 1rem;
+  text-align: center;
+}
+
+nav a {
+  margin: 0 1rem;
+  text-decoration: none;
+  color: #333;
+}
+
+/* Hero Section */
+.hero {
+  position: relative;
+}
+
+.hero img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.hero h1 {
+  position: absolute;
+  top: 20px;
+  width: 100%;
+  padding: 16px;
+  text-align: center;
+  background-color: var(--accent1-color);
+  color: #fff;
+  opacity: 0.8;
+}
+
+/* Hero Article */
+.hero article {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 16px;
+  border-radius: 8px;
+  max-width: 400px;
+}
+
+.hero article img {
+  float: right;
+  width: 125px;
+  margin-left: 12px;
+  border-radius: 4px;
+}
+
+/* General Section and Article Styling */
+section, article, p {
   margin: 16px;
   padding: 8px;
 }
 
-figure {
-  margin: 0;
-  text-align: center;
-}
-
-figure img {
-  width: 100%;
+/* Main Image Gallery */
+section img {
+  width: 150px;
   height: auto;
-  border-radius: 4px;
+  margin: 4px;
 }
 
-figcaption {
-  font-size: 0.9rem;
-  margin-top: 0.5rem;
-  color: #555;
+/* Basic Links Styling */
+a {
+  text-decoration: none;
 }
 
-footer {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 1rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+/* Social Media Icons */
+.socialmedia a {
+  margin: 0 8px;
 }
-
-.socialmedia {
-  display: flex;
-  gap: 1rem;
-}
-
 .socialmedia img {
   width: 24px;
   height: auto;
