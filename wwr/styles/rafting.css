@@ -110,11 +110,23 @@ section {
   padding: 1rem;
 }
 
-.adventures {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-  gap: 1rem;
-  padding: 1rem;
+.adventure-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+
+.adventure-gallery figure {
+  width: 200px;
+  text-align: center;
+}
+
+.adventure-gallery img {
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
 }
 
 figure {
