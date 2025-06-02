@@ -213,6 +213,10 @@ footer {
   background-color: #044804;
 }
 
+.contact-form button {
+  border: 2px solid red;
+}
+
 /* Embedded Map Styling */
 .map {
   width: 100%;
