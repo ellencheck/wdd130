@@ -233,21 +233,23 @@ footer {
 }
 
 .employee-grid {
-  display: flex;
-  justify-content: center;
-  gap: 1rem;
-  flex-wrap: wrap;
-  margin-top: 1rem;
+  display: flex !important;
+  flex-direction: row !important;
+  justify-content: center !important;
+  align-items: flex-start !important;
+  gap: 1rem !important;
+  flex-wrap: wrap !important;
+  margin-top: 1rem !important;
 }
 
 .employee-grid figure {
-  width: 200px;
-  text-align: center;
+  width: 200px !important;
+  text-align: center !important;
 }
 
 .employee-grid img {
-  width: 100%;
-  height: auto;
-  border-radius: 5px;
+  width: 100% !important;
+  height: auto !important;
+  border-radius: 8px !important;
 }
 
