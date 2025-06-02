@@ -72,9 +72,30 @@
     <label for="email">Email:</label>
     <input type="email" id="email" name="email" required>
 
-   <fieldset>
-  <input type="checkbox" id="subscribe" name="subscribe" value="yes">
-  <label for="subscribe">Subscribe to our monthly newsletter</label>
+  <fieldset>
+  <legend>Purpose of Message:</legend>
+
+  <div>
+    <input type="radio" id="purpose-general" name="purpose" value="general" required>
+    <label for="purpose-general">General Inquiry</label>
+  </div>
+
+  <div>
+    <input type="radio" id="purpose-reservation" name="purpose" value="reservation">
+    <label for="purpose-reservation">Reservation Question</label>
+  </div>
+
+  <div>
+    <input type="radio" id="purpose-suggestion" name="purpose" value="suggestion">
+    <label for="purpose-suggestion">Website Suggestion</label>
+  </div>
+</fieldset>
+
+<fieldset>
+  <div>
+    <input type="checkbox" id="subscribe" name="subscribe" value="yes">
+    <label for="subscribe">Subscribe to our monthly newsletter</label>
+  </div>
 </fieldset>
 
       <input type="radio" id="purpose-reservation" name="purpose" value="reservation">
