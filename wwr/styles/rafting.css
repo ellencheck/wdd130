@@ -216,20 +216,29 @@ footer {
 
 .employee-container {
   display: flex;
-  justify-content: flex-start; /* Или center, если нужно центрировать */
-  flex-wrap: nowrap; /* Запрещаем перенос на новую строку */
-  gap: 20px; /* Расстояние между сотрудниками */
+  justify-content: flex-start; /* Выравнивание слева, можно изменить на center */
+  flex-wrap: nowrap;           /* Элементы в одной строке */
+  gap: 20px;                   /* Расстояние между сотрудниками */
   margin-top: 20px;
-  overflow-x: auto; /* Добавляет горизонтальный скролл, если не помещаются */
-  padding-bottom: 10px; /* Немного отступ снизу для скролла */
+  overflow-x: auto;            /* Горизонтальный скролл при необходимости */
+  padding-bottom: 10px;        /* Отступ снизу для скролла */
 }
 
 .employee-container figure {
   text-align: center;
-  width: 200px;
+  width: 200px;                /* Фиксированная ширина каждого сотрудника */
 }
 
 .employee-container img {
   width: 100%;
   height: auto;
   border-radius: 10px;
+}
+.employee-container::-webkit-scrollbar {
+  height: 8px;
+}
+
+.employee-container::-webkit-scrollbar-thumb {
+  background-color: var(--primary-color);
+  border-radius: 4px;
+}
