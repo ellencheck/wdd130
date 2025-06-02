@@ -214,13 +214,14 @@ footer {
   margin-bottom: 2rem;
 }
 
-/* Employee Section */
 .employee-container {
   display: flex;
-  justify-content: center;
-  flex-wrap: wrap; /* Если экран узкий — элементы перейдут на следующую строку */
-  gap: 20px; /* Расстояние между фигурами */
+  justify-content: flex-start; /* Или center, если нужно центрировать */
+  flex-wrap: nowrap; /* Запрещаем перенос на новую строку */
+  gap: 20px; /* Расстояние между сотрудниками */
   margin-top: 20px;
+  overflow-x: auto; /* Добавляет горизонтальный скролл, если не помещаются */
+  padding-bottom: 10px; /* Немного отступ снизу для скролла */
 }
 
 .employee-container figure {
