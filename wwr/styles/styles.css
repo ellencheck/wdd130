@@ -40,8 +40,12 @@ a {
   font-weight: bold;
 }
 
+.main-nav {
+  display: flex;
+  gap: 1.5rem;
+}
+
 .main-nav a {
-  margin-left: 1rem;
   font-weight: 500;
   transition: color 0.3s ease;
 }
@@ -72,19 +76,8 @@ a {
 .footer-right {
   display: flex;
   align-items: center;
-  gap: 1rem;
 }
 
-.footer-right a {
-  color: #ffffff;
-  font-weight: 500;
-}
-
-.footer-right a:hover {
-  color: #aaddff;
-}
-
-/* Соцсети в футере */
 .social-icons {
   display: flex;
   gap: 1rem;
@@ -102,15 +95,16 @@ a {
 
 /* ===== Мобильная адаптация ===== */
 @media (max-width: 600px) {
-  .footer-container,
-  .header-container {
+  .header-container,
+  .footer-container {
     flex-direction: column;
     text-align: center;
     gap: 0.5rem;
   }
 
-  .main-nav a {
-    margin: 0.5rem;
+  .main-nav {
+    flex-direction: column;
+    gap: 0.5rem;
   }
 
   .social-icons {
