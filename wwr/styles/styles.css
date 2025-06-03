@@ -1,24 +1,34 @@
-/* Базовые шрифты */
+/* styles.css */
+
+/* ===== Шрифты ===== */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+/* ===== Базовые стили ===== */
 body {
-  font-family: 'Roboto', Arial, sans-serif;
-  font-weight: 400;
-  color: #222;
   margin: 0;
-  background: #fafafa;
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.6;
+  background-color: #f9f9f9;
+  color: #333;
 }
 
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* ===== Контейнер ===== */
 .container {
   max-width: 1100px;
   margin: 0 auto;
-  padding: 0 1rem;
+  padding: 1rem;
 }
 
-/* Хедер */
-header {
-  background: #2e7d32; /* тёмно-зелёный */
-  padding: 0.75rem 0;
-  box-shadow: 0 2px 4px rgb(0 0 0 / 0.1);
-  font-size: 1rem;
+/* ===== Header ===== */
+#site-header {
+  background-color: #004466;
+  color: white;
+  padding: 0.5rem 0;
 }
 
 .header-container {
@@ -27,42 +37,40 @@ header {
   align-items: center;
 }
 
-/* Логотип */
 .logo {
-  font-family: 'Merriweather', serif;
-  font-weight: 900;
-  font-size: 1.6rem;
-  color: #fff;
-  text-decoration: none;
-  letter-spacing: 0.05em;
-  user-select: none;
+  font-size: 1.5rem;
+  font-weight: bold;
 }
 
-/* Навигация */
-.nav-links {
-  list-style: none;
+.main-nav a {
+  margin-left: 1rem;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.main-nav a:hover {
+  color: #aaddff;
+}
+
+/* ===== Footer ===== */
+#site-footer {
+  background-color: #004466;
+  color: white;
+  padding: 1rem 0;
+  font-size: 0.9rem;
+}
+
+.footer-container {
   display: flex;
-  gap: 1.8rem;
-  margin: 0;
-  padding: 0;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.nav-links a {
-  color: #e0e0e0;
-  text-decoration: none;
-  font-weight: 600;
-  padding: 0.25rem 0.5rem;
-  border-radius: 3px;
-  transition: background-color 0.25s ease, color 0.25s ease;
+.footer-right a {
+  color: #ffffff;
+  font-weight: 500;
 }
 
-.nav-links a:hover,
-.nav-links a.active {
-  background-color: #66bb6a; /* светло-зелёный */
-  color: #fff;
-}
-
-/* Активная ссылка */
-.nav-links a.active {
-  box-shadow: inset 0 -3px 0 0 #fff;
+.footer-right a:hover {
+  color: #aaddff;
 }
