@@ -62,10 +62,17 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .footer-left {
   font-weight: 400;
+}
+
+.footer-right {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
 }
 
 .footer-right a {
