@@ -1,132 +1,94 @@
-/* Общие переменные */
-:root {
-  --green: #055a05;
-  --white: #fff;
-  --text-color: #264653;
-  --accent-color: #f4a261;
-  --font-heading: 'Merriweather', serif;
-  --font-body: 'Roboto', sans-serif;
-  --primary-color: #055a05;
-  --secondary-color: #f4a261;
-  --accent1-color: #264653;
-  --accent2-color: #e9c46a;
-  --heading-font: "Merriweather", serif;
-  --body-font: "Roboto", sans-serif;
+/* Общие стили */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f9f9f9;
+  color: #333;
+  line-height: 1.6;
 }
 
-/* Центрирование и max-width */
-header, .grid, footer {
+header,
+footer {
   max-width: 840px;
   margin: 0 auto;
+  padding: 1em;
+  background: #004466;
+  color: #fff;
+  text-align: center;
 }
 
-/* Основные стили body */
-body {
-  font-family: var(--body-font);
-  color: var(--accent1-color);
-  background-color: var(--white);
-  line-height: 1.5;
-}
-
-/* Header */
-header {
-  background-color: var(--green);
-  color: var(--white);
-  display: grid;
-  grid-template-columns: auto 1fr auto;
-  align-items: center;
-  padding: 1rem;
-  gap: 1rem;
-}
-
-header img {
-  height: 80px;
-  width: auto;
+header h1 {
+  margin: 0 0 0.5em 0;
+  border-bottom: 3px solid #66ccff;
+  padding-bottom: 0.3em;
 }
 
 /* Навигация */
-nav {
-  display: flex;
-  justify-content: space-evenly; /* равное расстояние между ссылками */
-  align-items: center;
+nav ul {
   list-style: none;
   padding: 0;
   margin: 0;
-  background-color: steelblue;
-  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  gap: 1.5em;
 }
 
 nav a {
-  display: block;
-  padding: 0.5rem 1rem;
+  color: #cceeff;
   text-decoration: none;
-  font-size: 1.2rem;
-  font-weight: 700;
-  color: var(--white);
-  transition: color 0.3s ease;
+  font-weight: bold;
+  padding: 0.2em 0.5em;
+  transition: background-color 0.3s;
 }
 
 nav a:hover,
 nav a.current {
-  text-decoration: underline;
-  color: #333;
-  font-weight: bold;
+  background-color: #66ccff;
+  color: #004466;
+  border-radius: 4px;
 }
 
-/* Заголовок */
-h1 {
-  font-family: var(--heading-font);
-  font-size: 2rem;
-  text-align: center;
-  color: var(--primary-color);
-  border-bottom: 3px solid var(--secondary-color); /* Нижняя граница */
-  padding-bottom: 0.3rem;
-  margin-bottom: 1rem;
-}
-
-/* Сетка для main и aside */
+/* Сетка */
 .grid {
+  max-width: 840px;
+  margin: 1em auto;
   display: grid;
-  grid-template-columns: 20rem 1fr;
-  gap: 1rem;
-  align-items: start;
-  margin-top: 2rem;
+  grid-template-columns: 1fr 2fr;
+  gap: 1.5em;
+  padding: 0 1em;
 }
 
-/* aside */
+/* Стили для aside */
 aside {
-  background-color: #f0f0f0;
-  padding: 1rem;
-  border-radius: 5px;
-  position: relative;
+  background: #e6f0ff;
+  padding: 1em;
+  border-radius: 6px;
 }
 
-/* main */
+/* Стили для main */
 main {
+  background: #fff;
+  padding: 1em;
+  border-radius: 6px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+
+/* Подвал */
+footer p {
   margin: 0;
-  padding: 0 1rem;
+  font-size: 0.9em;
 }
 
-/* Footer */
-footer {
-  background-color: var(--green);
-  color: var(--white);
-  padding: 1rem 2rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-top: 2rem;
+/* Адаптив для мобильных */
+@media (max-width: 600px) {
+  .grid {
+    grid-template-columns: 1fr;
+    padding: 0 0.5em;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 0.5em;
+  }
 }
-
-.socialmedia {
-  display: flex;
-  gap: 1rem;
-}
-
-.socialmedia img {
-  width: 24px;
-  height: 24px;
-}
-
-/* Остальные стили можно оставить без изменений */
-
