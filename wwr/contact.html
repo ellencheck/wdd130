@@ -50,27 +50,27 @@
         allowfullscreen
         loading="lazy"
         referrerpolicy="no-referrer-when-downgrade"
-        title="Map of our location"
+        title="Map showing our location"
       ></iframe>
     </section>
 
-  <section class="employees">
-  <h2>Meet Our Team</h2>
-  <div class="employee-container">
-    <figure>
-      <img src="images/employee1.png" alt="Emily, Tour Guide" />
-      <figcaption>Emily - Tour Guide</figcaption>
-    </figure>
-    <figure>
-      <img src="images/employee2.png" alt="Ellen, Safety Instructor" />
-      <figcaption>Ellen - Safety Instructor</figcaption>
-    </figure>
-    <figure>
-      <img src="images/employee3.png" alt="Samantha, Customer Service" />
-      <figcaption>Samantha - Customer Service</figcaption>
-    </figure>
-  </div>
-</section>
+    <section class="employees">
+      <h2>Meet Our Team</h2>
+      <div class="employee-container">
+        <figure>
+          <img src="images/employee1.png" alt="Emily - Tour Guide" />
+          <figcaption>Emily - Tour Guide</figcaption>
+        </figure>
+        <figure>
+          <img src="images/employee2.png" alt="Ellen - Safety Instructor" />
+          <figcaption>Ellen - Safety Instructor</figcaption>
+        </figure>
+        <figure>
+          <img src="images/employee3.png" alt="Samantha - Customer Service" />
+          <figcaption>Samantha - Customer Service</figcaption>
+        </figure>
+      </div>
+    </section>
 
     <section class="contact-form">
       <h2>Send Us a Message</h2>
@@ -83,29 +83,24 @@
 
         <fieldset>
           <legend>Purpose of Message:</legend>
-
           <div>
             <input type="radio" id="purpose-general" name="purpose" value="general" required />
             <label for="purpose-general">General Inquiry</label>
           </div>
-
           <div>
             <input type="radio" id="purpose-reservation" name="purpose" value="reservation" />
             <label for="purpose-reservation">Reservation Question</label>
           </div>
-
           <div>
             <input type="radio" id="purpose-suggestion" name="purpose" value="suggestion" />
             <label for="purpose-suggestion">Website Suggestion</label>
           </div>
         </fieldset>
 
-        <fieldset>
-          <div>
-            <input type="checkbox" id="subscribe" name="subscribe" value="yes" />
-            <label for="subscribe">Subscribe to our monthly newsletter</label>
-          </div>
-        </fieldset>
+        <div>
+          <input type="checkbox" id="subscribe" name="subscribe" value="yes" />
+          <label for="subscribe">Subscribe to our monthly newsletter</label>
+        </div>
 
         <label for="message">Message:</label>
         <textarea id="message" name="message" rows="5" required></textarea>
