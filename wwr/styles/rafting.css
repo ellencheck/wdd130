@@ -1,4 +1,5 @@
-:root {Add commentMore actions
+/* Общие переменные */
+:root {
   --green: #055a05;
   --white: #fff;
   --text-color: #264653;
@@ -13,32 +14,29 @@
   --body-font: "Roboto", sans-serif;
 }
 
-* {
-@@ -14,113 +14,138 @@
+/* Центрирование и max-width */
+header, .grid, footer {
+  max-width: 840px;
+  margin: 0 auto;
 }
 
+/* Основные стили body */
 body {
-  font-family: var(--font-body);
-  color: var(--text-color);
-  background: var(--white);
-  line-height: 1.5;
   font-family: var(--body-font);
   color: var(--accent1-color);
-  background-color: white;
+  background-color: var(--white);
+  line-height: 1.5;
 }
 
+/* Header */
 header {
   background-color: var(--green);
   color: var(--white);
   display: grid;
   grid-template-columns: auto 1fr auto;
-  grid-template-columns: auto 1fr;
   align-items: center;
-  padding: 1rem 2rem;
   padding: 1rem;
   gap: 1rem;
-  max-width: 1200px;
-  margin: 0 auto;
 }
 
 header img {
@@ -46,28 +44,26 @@ header img {
   width: auto;
 }
 
-header h1 {
-  font-family: var(--font-heading);
-  font-size: 1.8rem;
-  text-align: center;
-  color: var(--white);
-  height: 60px;
-}
-
-nav ul {
+/* Навигация */
 nav {
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-evenly; /* равное расстояние между ссылками */
+  align-items: center;
   list-style: none;
-  gap: 1rem;
-  gap: 1.5rem;
+  padding: 0;
+  margin: 0;
+  background-color: steelblue;
+  border-radius: 5px;
 }
 
 nav a {
-  color: var(--white);
+  display: block;
+  padding: 0.5rem 1rem;
   text-decoration: none;
-  font-weight: 600;
-  font-size: 1rem;
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--white);
+  transition: color 0.3s ease;
 }
 
 nav a:hover,
@@ -77,120 +73,38 @@ nav a.current {
   font-weight: bold;
 }
 
-main {
-  max-width: 1200px;
-  margin: 2rem auto;
-  padding: 0 1rem;
-  margin: 0 auto;
-}
-
-h1, h2 {
-  font-family: var(--heading-font);
-  color: var(--primary-color);
-}
-
+/* Заголовок */
 h1 {
+  font-family: var(--heading-font);
   font-size: 2rem;
   text-align: center;
+  color: var(--primary-color);
+  border-bottom: 3px solid var(--secondary-color); /* Нижняя граница */
+  padding-bottom: 0.3rem;
+  margin-bottom: 1rem;
 }
 
-.hero {
+/* Сетка для main и aside */
+.grid {
+  display: grid;
+  grid-template-columns: 20rem 1fr;
+  gap: 1rem;
+  align-items: start;
+  margin-top: 2rem;
+}
+
+/* aside */
+aside {
+  background-color: #f0f0f0;
+  padding: 1rem;
+  border-radius: 5px;
   position: relative;
 }
 
-.hero img {
-  width: 100%;
-  height: auto;
-  display: block;
-}
-
-.hero h1 {
-  position: absolute;
-  top: 20px;
-  width: 100%;
-  padding: 16px;
-  text-align: center;
-  background-color: var(--accent1-color);
-  color: #fff;
-  opacity: 0.8;
-}
-
-/* History Section */
-section.history {
-  background-color: #f9f9f9;
-  padding: 2rem;
-.hero article {
-  position: absolute;
-  bottom: 20px;
-  left: 20px;
-  background-color: rgba(255, 255, 255, 0.9);
-  padding: 16px;
-  border-radius: 8px;
-  margin-bottom: 2rem;
-  color: var(--text-color);
-  font-size: 1rem;
-  max-width: 400px;
-}
-
-/* Adventures Section */
-section.adventures {
-  display: flex;
-.hero article img {
-  float: right;
-  width: 125px;
-  margin-left: 12px;
-  border-radius: 4px;
-}
-
-section {
-  margin: 16px;
-  padding: 8px;
-}
-
-.history {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 1rem;
-  justify-content: space-between;
-  flex-wrap: nowrap;
-  margin-bottom: 3rem;
-  padding: 1rem;
-}
-
-.adventures {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-  gap: 1rem;
-  padding: 1rem;
-}
-
-.adventures figure {
-  flex: 1 1 18%;
-figure {
+/* main */
+main {
   margin: 0;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-}
-
-.adventures img {
-figure img {
-  width: 100%;
-  border-radius: 6px;
-  object-fit: cover;
-  height: 140px;
-  height: auto;
-  border-radius: 4px;
-}
-
-figcaption {
-  margin-top: 0.5rem;
-  font-size: 0.9rem;
-  color: var(--text-color);
-  text-align: center;
-  margin-top: 0.5rem;
-  color: #555;
+  padding: 0 1rem;
 }
 
 /* Footer */
@@ -198,19 +112,21 @@ footer {
   background-color: var(--green);
   color: var(--white);
   padding: 1rem 2rem;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 1rem;
   display: flex;
-  justify-content: flex-end;
   justify-content: space-between;
   align-items: center;
+  margin-top: 2rem;
 }
 
 .socialmedia {
   display: flex;
-  gap: 0.5rem;
   gap: 1rem;
 }
 
 .socialmedia img {
+  width: 24px;
+  height: 24px;
+}
+
+/* Остальные стили можно оставить без изменений */
+
