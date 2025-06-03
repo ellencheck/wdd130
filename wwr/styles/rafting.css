@@ -1,4 +1,5 @@
-:root {More actions
+/* ================= Root Variables ================= */
+:root {
   --primary-color: #055a05; /* forest green */
   --primary-color-light: #3b8a3b; /* чуть светлее основной зелени для заголовков */
   --secondary-color: #f4a261; /* warm sand */
@@ -8,81 +9,67 @@
   --body-font: "Roboto", sans-serif;
 }
 
+/* ================= Global Styles ================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--body-font);
+  background-color: #fff;
+  color: #333;
+  line-height: 1.6;
+}
+
 h1, h2, h3, h4, h5, h6 {
-  color: var(--primary-color-light) !important;  /* светло-зеленый цвет для всех заголовков */
+  color: var(--primary-color-light) !important;
   font-family: var(--heading-font) !important;
 }
 
-/* Специально для About Us заголовка - сделаем белым */
-#about-us-heading {
-  color: white !important;
+h1, h2 {
+  /* Цвет и шрифт уже заданы выше */
 }
 
-/* Остальной CSS без изменений */
-/* --- Сделаем название компании в шапке белым --- */
+/* ================= Header ================= */
 header h1.company-name {
   color: white !important;
 }
 
-/* Убираем красную рамку у кнопки, сделаем стандартную */
-.contact-form button {
-  border: none !important;  /* убираем красную рамку */
-  background-color: #05a305; /* Ярко-зелёный */
-  color: white;
-  padding: 0.75rem 1.5rem;
-  font-size: 1rem;
-  font-family: var(--body-font);
-  border-radius: 4px;
-  cursor: pointer;
-  opacity: 1 !important;
-  visibility: visible !important;
-  display: inline-block !important;
-  transition: background-color 0.3s ease;
+/* ================= About Us Heading ================= */
+#about-us-heading {
+  color: white !important;
 }
 
-/* ...далее твои остальные стили без изменений... */
-.contact-form button:hover {
-  background-color: #048904; /* темнее при наведении */
-}
-
-/* --- остальной CSS без изменений --- */
-
-* {
-  margin: 0;
-@@ -67,7 +90,6 @@
-
-h1, h2 {
-  font-family: var(--heading-font);
-  /* Цвет теперь задаём выше, в общем правиле */
-}
-
-h1 {
-@@ -91,9 +113,8 @@
+/* ================= Hero Section ================= */
+.hero article {
   width: 100%;
   padding: 16px;
   text-align: center;
-  background-color: rgba(38, 70, 83, 0.8); /* var(--accent1-color) в rgba с прозрачностью */
   background-color: rgba(38, 70, 83, 0.8);
   color: #fff;
-  /* opacity: 0.8;  — убрать */
 }
 
-.hero article {
-@@ -168,8 +189,6 @@
-  height: auto;
+/* ================= Map ================= */
+.map {
+  width: 100%;
+  height: 400px;
 }
 
-/* ======== Contact Page Specific Styles ======== */
-
+/* ================= Contact Form ================= */
 .contact-form {
   background-color: #f9f9f9;
   padding: 1.5rem;
-@@ -207,32 +226,6 @@
+}
+
+.contact-form h2 {
+  margin-bottom: 1rem;
   color: var(--accent1-color);
 }
 
 .contact-form button {
-  background-color: #05a305; /* Ярко-зелёный */
+  background-color: #05a305;
   color: white;
   border: none;
   padding: 0.75rem 1.5rem;
@@ -90,8 +77,6 @@ h1 {
   font-family: var(--body-font);
   border-radius: 4px;
   cursor: pointer;
-
-  /* Важно — обеспечим видимость */
   opacity: 1 !important;
   visibility: visible !important;
   display: inline-block !important;
@@ -99,14 +84,5 @@ h1 {
 }
 
 .contact-form button:hover {
-  background-color: #048904; /* темнее при наведении */
+  background-color: #048904;
 }
-
-.contact-form button {
-  border: 2px solid red;
-}
-
-/* Embedded Map Styling */
-.map {
-  width: 100%;
-  height: 400px;
