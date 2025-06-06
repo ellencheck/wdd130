@@ -256,3 +256,12 @@ footer {
 
 .contact-form button[type="submit"]:hover {
   background-color: #004999;
+.radio-group {
+  margin-bottom: 1rem;
+  padding-left: 1rem;
+}
+
+.radio-group input[type="radio"] {
+  margin-right: 0.4rem;
+  margin-bottom: 0.4rem;
+}
