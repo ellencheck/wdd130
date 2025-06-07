@@ -293,9 +293,6 @@ footer {
   margin: 0 2rem;
 }
 .wireframe-link a {
-  background-color: #055a05;
-  color: white;
-  padding: 0.5em 1em;
-  text-decoration: none;
-  border-radius: 6px;
+ background-color: #003366;
+color: #ffffff;
 }
