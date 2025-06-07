@@ -291,4 +291,9 @@ footer {
 .wireframe-link {
   margin: 0 2rem;
 }
+.wireframe-link a {
+  color: #264653; /* тёмный синий: высокий контраст */
+  font-weight: bold;
+  text-decoration: underline;
+}
 
