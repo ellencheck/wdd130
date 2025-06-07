@@ -292,7 +292,7 @@ footer {
   margin: 0 2rem;
 }
 .wireframe-link a {
-  color: #264653; /* тёмный синий: высокий контраст */
+  color: #000000;
   font-weight: bold;
   text-decoration: underline;
 }
