@@ -307,3 +307,8 @@ footer {
   gap: 0.5rem;
   margin-top: 1rem;
 }
+.contact-form input[type="checkbox"],
+.radio-group input[type="radio"] {
+  margin-right: 0.5rem;
+  vertical-align: middle; 
+}
