@@ -290,12 +290,15 @@ footer {
   font-size: 1rem;
   cursor: pointer;
 }
-.wireframe-link {
-  margin: 0 2rem;
-}
-.wireframe-link {
-  background-color: #264653;
-}
 .wireframe-link a {
-  color: #ffffff; 
+  color: #ffffff;
+  background-color: #264653; 
+  padding: 0.2rem 0.5rem;
+  border-radius: 4px;
 }
+.contact-form input[type="checkbox"],
+.radio-group input[type="radio"] {
+  margin-right: 0.5rem;
+  vertical-align: middle;
+}
+ 
