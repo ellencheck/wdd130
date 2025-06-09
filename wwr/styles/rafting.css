@@ -278,8 +278,9 @@ footer {
 
 .radio-group {
   display: flex;
-  flex-direction: column;
-  gap: 0.5rem; /* Отступы между вариантами */
+  flex-direction: row; 
+  gap: 1rem; 
+  flex-wrap: wrap; 
 }
 
 .radio-group label {
@@ -292,6 +293,9 @@ footer {
 .wireframe-link {
   margin: 0 2rem;
 }
+.wireframe-link {
+  background-color: #264653;
+}
 .wireframe-link a {
-color: #ffffff;
+  color: #ffffff; 
 }
