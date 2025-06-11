@@ -1,11 +1,203 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Trips</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Explore our exciting rafting trips and adventures designed for all skill levels." />
+  <meta name="author" content="Alina Chekalova" />
+  <title>White Water Rafting | Trips</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700;900&family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles/rafting.css" />
+  <style>
+    /* Additional styles for Trips page layout */
+    main {
+      max-width: 1200px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+    .cta-contact {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+    .cta-contact a {
+      background-color: #0077c8;
+      color: white;
+      padding: 12px 24px;
+      text-decoration: none;
+      font-weight: 700;
+      border-radius: 5px;
+      transition: background-color 0.3s ease;
+    }
+    .cta-contact a:hover {
+      background-color: #005fa3;
+    }
+
+    .trip-descriptions {
+      display: flex;
+      gap: 2rem;
+      margin-bottom: 3rem;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+    .trip-card {
+      flex: 1 1 30%;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+      border-radius: 8px;
+      overflow: hidden;
+      background: #fff;
+      display: flex;
+      flex-direction: column;
+    }
+    .trip-card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+    .trip-card-content {
+      padding: 1rem;
+      flex-grow: 1;
+    }
+    .trip-card-content h3 {
+      margin-top: 0;
+      margin-bottom: 0.5rem;
+      color: #0077c8;
+    }
+    .trip-card-content p {
+      margin: 0;
+      font-size: 0.95rem;
+      line-height: 1.4;
+      color: #333;
+    }
+
+    table.trip-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 3rem;
+    }
+    table.trip-table thead {
+      background-color: #0077c8;
+      color: white;
+    }
+    table.trip-table th,
+    table.trip-table td {
+      padding: 12px 15px;
+      border: 1px solid #ddd;
+      text-align: left;
+      font-size: 0.95rem;
+    }
+    table.trip-table tbody tr:nth-child(even) {
+      background-color: #f9f9f9;
+    }
+    table.trip-table tbody tr:hover {
+      background-color: #e1f0ff;
+    }
+
+    footer .wireframe-link {
+      margin-top: 0.5rem;
+      font-size: 0.9rem;
+      color: #0077c8;
+    }
+    footer .wireframe-link a {
+      color: #0077c8;
+      text-decoration: underline;
+    }
+  </style>
 </head>
 <body>
-  <h1>Our Trips</h1>
-  <p>More content coming soon.</p>
+  <header>
+    <img src="images/wwr-logo.png" alt="Rafting Company Logo" />
+    <nav class="nav-menu">
+      <a href="index.html">Home</a>
+      <a href="about.html">About Us</a>
+      <a href="trips.html">Trips</a>
+      <a href="contact.html">Contact Us</a>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Explore Our Rafting Trips & Adventures</h1>
+
+    <div class="cta-contact">
+      <p>Ready for your next adventure? <a href="contact.html">Contact Us Today!</a></p>
+    </div>
+
+    <section class="trip-descriptions">
+      <article class="trip-card">
+        <img src="images/trip-rapids.jpg" alt="Rapid Rush Trip" />
+        <div class="trip-card-content">
+          <h3>Rapid Rush</h3>
+          <p>Experience the thrill of class IV and V rapids on this adrenaline-pumping full-day trip. Perfect for adventure seekers looking for a challenge!</p>
+        </div>
+      </article>
+
+      <article class="trip-card">
+        <img src="images/trip-family.jpg" alt="Family Adventure Trip" />
+        <div class="trip-card-content">
+          <h3>Family Adventure</h3>
+          <p>A gentle, scenic rafting experience suitable for families and beginners. Enjoy nature and wildlife along calm river stretches with certified guides.</p>
+        </div>
+      </article>
+
+      <article class="trip-card">
+        <img src="images/trip-halfday.jpg" alt="Half Day Exploration Trip" />
+        <div class="trip-card-content">
+          <h3>Half Day Exploration</h3>
+          <p>A perfect introduction to rafting with a 4-hour guided trip through moderate rapids, suitable for all skill levels. Great for those with limited time.</p>
+        </div>
+      </article>
+    </section>
+
+    <section>
+      <h2>Available Trips Overview</h2>
+      <table class="trip-table" summary="Details of rafting trips offered including difficulty, duration, and price">
+        <thead>
+          <tr>
+            <th>Trip Name</th>
+            <th>Difficulty Level</th>
+            <th>Duration</th>
+            <th>Price (per person)</th>
+            <th>Recommended For</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Rapid Rush</td>
+            <td>Class IV-V</td>
+            <td>Full Day (8 hours)</td>
+            <td>$150</td>
+            <td>Experienced rafters, thrill seekers</td>
+          </tr>
+          <tr>
+            <td>Family Adventure</td>
+            <td>Class I-II</td>
+            <td>Half Day (4 hours)</td>
+            <td>$80</td>
+            <td>Families, beginners, kids 8+</td>
+          </tr>
+          <tr>
+            <td>Half Day Exploration</td>
+            <td>Class II-III</td>
+            <td>Half Day (4 hours)</td>
+            <td>$90</td>
+            <td>Beginners, intermediate rafters</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 White Water Rafting Co. | Alina Chekalova</p>
+    <div class="socialmedia">
+      <a href="https://facebook.com"><img src="images/facebook.svg" alt="Facebook" /></a>
+      <a href="https://twitter.com"><img src="images/twitter.svg" alt="Twitter" /></a>
+      <a href="https://instagram.com"><img src="images/instagram.svg" alt="Instagram" /></a>
+    </div>
+    <p class="wireframe-link">
+      <a href="images/trips-wireframe.png" target="_blank" rel="noopener">View Trips Page Wireframe</a>
+    </p>
+  </footer>
 </body>
 </html>
