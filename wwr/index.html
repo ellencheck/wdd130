@@ -1,78 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <meta name="description" content="Experience thrilling white water rafting adventures!">
-  <meta name="author" content="Alina Chekalova" />
-  <title>White Water Rafting | Home</title>
-  <link rel="stylesheet" href="styles/rafting.css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700;900&family=Roboto:wght@400;700&display=swap" rel="stylesheet"/>
-</head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>White Water Rafting</title>
+  <link rel="stylesheet" href="styles/rafting.css">
+  <style>
+    .homepage-hero {
+      position: relative;
+      width: 100%;
+      height: 80vh;
+      overflow: hidden;
+    }
 
+    .homepage-hero img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
+    .homepage-heading {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: white;
+      font-size: 3rem;
+      background: rgba(0, 0, 0, 0.5);
+      padding: 1rem 2rem;
+      border-radius: 10px;
+      text-align: center;
+    }
+
+    .homepage-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+      padding: 2rem;
+      text-align: center;
+    }
+
+    .homepage-grid img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 8px;
+    }
+
+    .homepage-grid h2 {
+      margin-top: 0.5rem;
+      font-size: 1.5rem;
+    }
+
+    .homepage-grid p {
+      margin: 0.5rem 0 1rem;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background-color: #eee;
+    }
+  </style>
+</head>
 <body>
+
   <header>
-    <img src="images/wwr-logo.png" alt="Rafting Company Logo" />
-    <nav class="nav-menu">
+    <nav>
       <a href="index.html">Home</a>
-      <a href="about.html">About Us</a>
+      <a href="about.html">About</a>
       <a href="trips.html">Trips</a>
-      <a href="contact.html">Contact Us</a>
+      <a href="contact.html">Contact</a>
     </nav>
   </header>
 
   <main>
-    <!-- Hero Section -->
-    <section class="hero">
-      <img src="images/hero.jpg" alt="White Water Rafting Adventure" />
-      <h1 class="hero-heading">Your Next Adventure Starts Here</h1>
-    </section>
+    <div class="homepage-hero">
+      <img src="images/hero.jpg" alt="Rafting Adventure">
+      <h1 class="homepage-heading">Your Adventure Starts Here</h1>
+    </div>
 
-    <!-- Call to Action -->
-    <section class="cta">
-      <h2>Explore Our Trips</h2>
-      <p>Whether you're a first-timer or a seasoned rafter, we have the perfect trip for you.</p>
-      <a class="btn" href="trips.html">View Trips</a>
-    </section>
-
-    <!-- Newsletter Signup -->
-    <section class="newsletter">
-      <h2>Join Our Newsletter</h2>
-      <form action="#" method="post">
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name" required />
-
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required />
-
-        <button type="submit">Sign Up</button>
-      </form>
-    </section>
-
-    <!-- Info Grid -->
-    <section class="info-grid">
-      <div class="info-item">
-        <img src="images/rafting-info1.webp" alt="Rafting Team" />
-        <h3>Why Choose Us?</h3>
-        <p>We offer safe, guided adventures for all experience levels, with certified instructors and top-notch gear.</p>
+    <div class="homepage-grid">
+      <div>
+        <img src="images/trip1.jpg" alt="Trip 1">
+        <h2>Family Rafting</h2>
+        <p>Safe, fun, and unforgettable trips for the whole family.</p>
       </div>
-      <div class="info-item">
-        <img src="images/rafting-info2.webp" alt="Rafting Rapids" />
-        <h3>Adventure Locations</h3>
-        <p>Explore the best rivers in the region, from gentle family floats to intense rapid runs.</p>
+      <div>
+        <img src="images/trip2.jpg" alt="Trip 2">
+        <h2>Extreme Adventure</h2>
+        <p>High-speed, thrilling rafting through wild rapids!</p>
       </div>
-    </section>
+      <div>
+        <img src="images/trip3.jpg" alt="Trip 3">
+        <h2>Group Events</h2>
+        <p>Perfect for team-building or big friend groups!</p>
+      </div>
+    </div>
   </main>
 
   <footer>
-    <p>&copy; 2025 White Water Rafting Co. | Alina Chekalova</p>
-    <div class="socialmedia">
-      <a href="https://facebook.com"><img src="images/facebook.svg" alt="Facebook"></a>
-      <a href="https://twitter.com"><img src="images/twitter.svg" alt="Twitter"></a>
-      <a href="https://instagram.com"><img src="images/instagram.svg" alt="Instagram"></a>
-    </div>
+    <p>&copy; 2025 White Water Rafting Co.</p>
   </footer>
+
 </body>
 </html>
