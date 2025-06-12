@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="Welcome to White Water Rafting Co., thrilling rafting adventures await you!" />
+  <meta name="description" content="Welcome to White Water Rafting - thrilling rafting adventures await you!" />
   <meta name="author" content="Alina Chekalova" />
   <title>White Water Rafting | Home</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -18,7 +18,7 @@
   <header>
     <img src="images/wwr-logo.png" alt="Rafting Company Logo" />
     <nav class="nav-menu">
-      <a href="index.html" aria-current="page">Home</a>
+      <a href="index.html">Home</a>
       <a href="about.html">About Us</a>
       <a href="trips.html">Trips</a>
       <a href="contact.html">Contact Us</a>
@@ -26,56 +26,55 @@
   </header>
 
   <main class="home-page">
+    <!-- Hero section -->
     <section class="hero-section">
       <img src="images/hero.jpg" alt="Rafting Adventure" class="hero-image" />
-      <h1 class="hero-title">Experience the Thrill of White Water Rafting</h1>
+      <h1 class="hero-title">White Water Rafting Co.</h1>
     </section>
 
-    <section class="newsletter-section">
-      <h2>Join Our Newsletter</h2>
-      <form class="newsletter-form" action="#" method="POST" novalidate>
-        <label for="name">Name</label>
-        <input type="text" id="name" name="name" required placeholder="Your name" />
-        <label for="email">Email</label>
-        <input type="email" id="email" name="email" required placeholder="Your email" />
-        <button type="submit" class="btn-primary">Sign Up</button>
-      </form>
-    </section>
-
-    <section class="explore-section">
-      <h2 class="section-title">Explore Trips</h2>
-      <p class="section-subtitle">Discover exciting rafting adventures waiting for you</p>
-      <div class="trips-grid">
-        <article class="trip-card">
-          <img src="images/rafting1.jpg" alt="Los Dientes del Diablo" />
-          <h3>Los Dientes del Diablo</h3>
-          <p>Experience heart-pounding rapids surrounded by stunning nature.</p>
-        </article>
-        <article class="trip-card">
-          <img src="images/rafting2.jpg" alt="Big Mallard" />
-          <h3>Big Mallard</h3>
-          <p>Challenge yourself on this adventurous river known for its excitement.</p>
-        </article>
-        <article class="trip-card">
-          <img src="images/rafting3.jpg" alt="Half Day Adventure" />
-          <h3>Half Day Adventure</h3>
-          <p>A perfect quick trip to enjoy rafting for beginners and experts alike.</p>
-        </article>
+    <!-- Newsletter + CTA -->
+    <section class="newsletter-cta">
+      <div class="newsletter">
+        <h2>Join Our Newsletter</h2>
+        <form action="#" method="post" class="newsletter-form">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" required />
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required />
+          <button type="submit">Subscribe</button>
+        </form>
       </div>
-      <a href="trips.html" class="btn-secondary">See All Trips</a>
+
+      <div class="cta">
+        <h2>Ready for Adventure?</h2>
+        <p>Discover the best rafting trips tailored just for you.</p>
+        <a href="trips.html" class="btn-primary">Explore Trips</a>
+      </div>
     </section>
 
-    <section class="experience-section">
-      <h2 class="section-title">Experience</h2>
-      <p class="experience-text">
-        Our mission is to provide thrilling, safe, and unforgettable rafting experiences. We
-        connect you with nature through adventure while upholding the highest safety and
-        environmental standards.
-      </p>
-      <div class="experience-images">
-        <img src="images/happy-client.jpg" alt="Happy client enjoying rafting" />
-        <img src="images/rafting4.jpg" alt="Rapid Rush" />
-      </div>
+    <!-- Grid content about rafting -->
+    <section class="info-grid">
+      <article>
+        <img src="images/rafting1.jpg" alt="Los Dientes del Diablo" />
+        <h3>Thrilling Rapids</h3>
+        <p>
+          Experience the rush of the wild rivers like Los Dientes del Diablo, where adventure and nature meet.
+        </p>
+      </article>
+      <article>
+        <img src="images/rafting2.jpg" alt="Big Mallard" />
+        <h3>Family Friendly</h3>
+        <p>
+          Safe and fun trips for all ages. Bring your family and create unforgettable memories on the Big Mallard route.
+        </p>
+      </article>
+      <article>
+        <img src="images/rafting3.jpg" alt="Half Day Adventure" />
+        <h3>Half Day Adventures</h3>
+        <p>
+          Perfect for a quick escape! Join our half-day trips for a refreshing taste of white water excitement.
+        </p>
+      </article>
     </section>
   </main>
 
