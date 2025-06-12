@@ -306,152 +306,225 @@ footer {
   gap: 0.5rem;
   margin-top: 1rem;
 }
-/* ===================
-   Home Page Styles
-=================== */
-
+/* Общие стили для home page */
 .home-page {
-  padding: 2rem;
   font-family: 'Roboto', sans-serif;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
   color: #333;
 }
 
-/* Hero section */
-.hero-home {
+/* Hero Section */
+.hero-section {
   position: relative;
   width: 100%;
-  max-height: 450px;
+  height: 400px;
   overflow: hidden;
-  margin-bottom: 3rem;
+  margin-bottom: 40px;
 }
 
-.hero-home .hero-image {
+.hero-section .hero-image {
   width: 100%;
-  height: auto;
-  display: block;
+  height: 100%;
   object-fit: cover;
-  max-height: 450px;
+  display: block;
 }
 
-.hero-home .hero-title {
+.hero-section .hero-title {
   position: absolute;
-  top: 50%;
+  bottom: 30px;
   left: 50%;
-  transform: translate(-50%, -50%);
-  color: white;
+  transform: translateX(-50%);
+  color: #fff;
   font-family: 'Merriweather', serif;
   font-weight: 900;
   font-size: 3rem;
-  text-shadow: 2px 2px 5px rgba(0,0,0,0.7);
-  text-align: center;
-  padding: 0 1rem;
+  text-shadow: 0 2px 6px rgba(0,0,0,0.6);
   max-width: 90%;
+  text-align: center;
+  line-height: 1.2;
 }
 
-/* Newsletter form */
-.newsletter-signup {
-  background-color: #f5faff;
-  padding: 2rem;
-  max-width: 600px;
-  margin: 0 auto 3rem auto;
+/* Newsletter Section */
+.newsletter-section {
+  background-color: #f9f9f9;
+  padding: 30px;
+  margin-bottom: 50px;
   border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  text-align: center;
 }
 
-.newsletter-signup h2 {
+.newsletter-section h2 {
   font-family: 'Merriweather', serif;
   font-weight: 700;
-  margin-bottom: 1rem;
-  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #005a87;
 }
 
 .newsletter-form {
   display: flex;
   flex-wrap: wrap;
-  gap: 1rem;
   justify-content: center;
+  gap: 15px;
 }
 
 .newsletter-form label {
-  flex: 0 0 100%;
+  flex-basis: 100%;
+  text-align: left;
   font-weight: 600;
+  margin-bottom: 5px;
+  color: #005a87;
 }
 
 .newsletter-form input[type="text"],
 .newsletter-form input[type="email"] {
-  flex: 1 1 45%;
-  padding: 0.5rem;
+  padding: 10px;
   font-size: 1rem;
   border: 1px solid #ccc;
-  border-radius: 4px;
+  border-radius: 5px;
+  flex: 1 1 200px;
+  max-width: 300px;
 }
 
-.newsletter-form button {
-  flex: 0 0 100%;
-  background-color: #0077cc;
+.newsletter-form button.btn-primary {
+  padding: 12px 25px;
+  background-color: #007bb5;
   color: white;
-  font-weight: 700;
-  font-size: 1.1rem;
-  padding: 0.7rem;
   border: none;
-  border-radius: 4px;
+  border-radius: 6px;
   cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
-.newsletter-form button:hover {
-  background-color: #005fa3;
-}
-
-/* Call to Action */
-.call-to-action {
-  text-align: center;
-  margin-bottom: 3rem;
-  font-size: 1.2rem;
-  color: #222;
-}
-
-.call-to-action .btn-cta {
-  display: inline-block;
-  margin-top: 1rem;
-  padding: 0.8rem 2rem;
-  background-color: #0099ff;
-  color: white;
   font-weight: 700;
-  border-radius: 30px;
-  text-decoration: none;
+  font-size: 1rem;
   transition: background-color 0.3s ease;
+  align-self: flex-end;
 }
 
-.call-to-action .btn-cta:hover {
-  background-color: #007acc;
+.newsletter-form button.btn-primary:hover {
+  background-color: #005a87;
 }
 
-/* CSS Grid for info section */
-.info-grid {
+/* Explore Trips Section */
+.explore-section {
+  margin-bottom: 60px;
+  text-align: center;
+}
+
+.explore-section .section-title {
+  font-family: 'Merriweather', serif;
+  font-weight: 700;
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  color: #005a87;
+}
+
+.explore-section .section-subtitle {
+  font-size: 1.2rem;
+  color: #666;
+  margin-bottom: 30px;
+  font-weight: 400;
+}
+
+.trips-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 2rem;
-  max-width: 900px;
-  margin: 0 auto 4rem auto;
+  gap: 25px;
+  margin-bottom: 25px;
+  padding: 0 20px;
 }
 
-.info-grid .grid-item {
-  background-color: #f0f8ff;
-  padding: 1rem;
-  border-radius: 8px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-  text-align: center;
+.trip-card {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgb(0 0 0 / 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease;
 }
 
-.info-grid img {
-  max-width: 100%;
-  border-radius: 6px;
-  margin-bottom: 1rem;
+.trip-card:hover {
+  transform: translateY(-8px);
 }
 
-.info-grid h3 {
+.trip-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  display: block;
+}
+
+.trip-card h3 {
   font-family: 'Merriweather', serif;
-  margin-bottom: 0.5rem;
-  color: #004466;
+  font-weight: 700;
+  font-size: 1.4rem;
+  color: #005a87;
+  margin: 15px 20px 5px;
+}
+
+.trip-card p {
+  font-size: 1rem;
+  color: #444;
+  margin: 0 20px 20px;
+  line-height: 1.4;
+}
+
+.btn-secondary {
+  display: inline-block;
+  background-color: transparent;
+  border: 2px solid #007bb5;
+  color: #007bb5;
+  padding: 12px 30px;
+  font-weight: 700;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn-secondary:hover {
+  background-color: #007bb5;
+  color: #fff;
+}
+
+/* Experience Section */
+.experience-section {
+  text-align: center;
+  padding: 0 20px;
+  margin-bottom: 60px;
+}
+
+.experience-section .section-title {
+  font-family: 'Merriweather', serif;
+  font-weight: 700;
+  font-size: 2.5rem;
+  color: #005a87;
+  margin-bottom: 20px;
+}
+
+.experience-text {
+  font-size: 1.1rem;
+  max-width: 700px;
+  margin: 0 auto 40px;
+  line-height: 1.6;
+  color: #444;
+  font-weight: 400;
+}
+
+.experience-images {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.experience-images img {
+  max-width: 320px;
+  width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 6px 12px rgb(0 0 0 / 0.15);
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.experience-images img:hover {
+  transform: scale(1.05);
 }
