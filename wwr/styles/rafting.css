@@ -306,43 +306,58 @@ footer {
   gap: 0.5rem;
   margin-top: 1rem;
 }
-/* Hero Section */
+/* HERO SECTION */
 .hero {
   position: relative;
   width: 100%;
+  height: 60vh;
   overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .hero img {
+  position: absolute;
   width: 100%;
-  height: auto;
-  display: block;
+  height: 100%;
   object-fit: cover;
-  max-height: 500px;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  filter: brightness(70%);
 }
 
 .hero-heading {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: #fff;
+  position: relative;
+  z-index: 1;
+  color: white;
   font-size: 3rem;
   background: rgba(0, 0, 0, 0.5);
   padding: 1.5rem 2rem;
-  border-radius: 12px;
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.3);
   text-align: center;
+  max-width: 90%;
+  font-family: 'Poppins', sans-serif;
 }
 
-/* Trip Cards */
+/* TRIP CARDS */
+.trip-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  padding: 3rem 1rem;
+  background-color: #f5f5f5;
+}
+
 .trip-card {
-  background-color: #ffffff;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-  margin: 1rem;
-  overflow: hidden;
-  transition: transform 0.3s;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  max-width: 300px;
+  transition: transform 0.3s ease;
 }
 
 .trip-card:hover {
@@ -353,23 +368,35 @@ footer {
   width: 100%;
   height: 200px;
   object-fit: cover;
-  display: block;
-  margin: 0 auto;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
 }
 
 .trip-card-content {
-  padding: 1.5rem;
+  padding: 1rem 1.2rem;
   text-align: center;
 }
 
 .trip-card-content h3 {
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   margin-bottom: 0.5rem;
   color: #333;
 }
 
 .trip-card-content p {
-  color: #666;
   font-size: 1rem;
+  color: #555;
   line-height: 1.5;
+}
+
+/* GLOBAL ALIGNMENTS */
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background-color: #fff;
+  color: #222;
+}
+
+h1, h2, h3 {
+  text-align: center;
 }
