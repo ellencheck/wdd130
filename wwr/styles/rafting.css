@@ -306,30 +306,70 @@ footer {
   gap: 0.5rem;
   margin-top: 1rem;
 }
+/* Hero Section */
 .hero {
   position: relative;
   width: 100%;
+  overflow: hidden;
 }
 
 .hero img {
   width: 100%;
   height: auto;
   display: block;
+  object-fit: cover;
+  max-height: 500px;
 }
 
 .hero-heading {
   position: absolute;
-  top: 40%;
+  top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  color: white;
+  color: #fff;
   font-size: 3rem;
-  background: rgba(0, 0, 0, 0.4);
-  padding: 1rem;
-  border-radius: 8px;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 1.5rem 2rem;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+  text-align: center;
 }
+
+/* Trip Cards */
+.trip-card {
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  margin: 1rem;
+  overflow: hidden;
+  transition: transform 0.3s;
+}
+
+.trip-card:hover {
+  transform: translateY(-5px);
+}
+
 .trip-card img {
   width: 100%;
   height: 200px;
-  object-fit: contain; /* Вместо cover */
+  object-fit: cover;
+  display: block;
+  margin: 0 auto;
+}
+
+.trip-card-content {
+  padding: 1.5rem;
+  text-align: center;
+}
+
+.trip-card-content h3 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  color: #333;
+}
+
+.trip-card-content p {
+  color: #666;
+  font-size: 1rem;
+  line-height: 1.5;
 }
