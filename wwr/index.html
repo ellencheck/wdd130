@@ -6,13 +6,13 @@
   <meta name="description" content="Welcome to White Water Rafting Co., your gateway to thrilling rafting adventures." />
   <meta name="author" content="Alina Chekalova" />
   <title>White Water Rafting | Home</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700;900&family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="styles/rafting.css" />
-</head>
-<body class="home">
 
+  <!-- Основной CSS -->
+  <link rel="stylesheet" href="styles/rafting.css" />
+  <!-- Дополнительный CSS для home, чтобы не трогать остальные страницы -->
+  <link rel="stylesheet" href="styles/home.css" />
+</head>
+<body>
   <header>
     <img src="images/wwr-logo.png" alt="Rafting Company Logo" />
     <nav class="nav-menu">
@@ -24,46 +24,45 @@
   </header>
 
   <main>
-
-    <!-- Hero section с position absolute для заголовка -->
-    <div class="hero">
+    <!-- Hero Section -->
+    <section class="hero">
       <img src="images/hero.jpg" alt="Rafting Adventure" />
-      <h1>White Water Rafting Co.</h1>
-    </div>
+      <h1 class="hero-title">White Water Rafting Co.</h1>
 
-    <!-- Newsletter sign-up форма -->
-    <section class="newsletter">
-      <h2>Subscribe to our Newsletter</h2>
-      <form action="#" method="post">
+      <!-- Newsletter Sign-up Form -->
+      <form class="newsletter-form" action="#" method="post" aria-label="Newsletter Sign Up">
+        <h2>Subscribe to Our Newsletter</h2>
         <label for="name">Name:</label>
-        <input type="text" id="name" name="name" required />
-        
+        <input id="name" name="name" type="text" required />
         <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required />
-        
-        <button type="submit">Subscribe</button>
+        <input id="email" name="email" type="email" required />
+        <button type="submit" class="btn-green">Subscribe</button>
       </form>
     </section>
 
-    <!-- Call to action -->
+    <!-- Call to Action -->
     <section class="call-to-action">
-      <p>Ready for your next adventure? <a href="trips.html">Check out our exciting trips!</a></p>
+      <p>Ready for your next adventure? <a href="trips.html" class="btn-green">Explore Our Trips</a></p>
     </section>
 
-    <!-- CSS grid с двумя картинками и контентом -->
+    <!-- CSS Grid Section -->
     <section class="grid-info">
       <div class="grid-item">
-        <img src="images/rafting1.jpg" alt="Rafting Adventure 1" />
-        <h3>Exciting Trips</h3>
-        <p>We offer a variety of trips for all skill levels, from beginner to expert.</p>
+        <img src="images/rafting1.jpg" alt="Rafting 1" />
+        <h3>Exciting Rapids</h3>
+        <p>Experience thrilling rapids for all skill levels with our expert guides.</p>
       </div>
       <div class="grid-item">
-        <img src="images/rafting2.jpg" alt="Rafting Adventure 2" />
-        <h3>Experienced Guides</h3>
-        <p>Our certified guides ensure your safety and fun on every trip.</p>
+        <img src="images/rafting2.jpg" alt="Rafting 2" />
+        <h3>Family Friendly</h3>
+        <p>Safe and fun trips for the whole family to enjoy the outdoors together.</p>
+      </div>
+      <div class="grid-item">
+        <img src="images/rafting3.jpg" alt="Rafting 3" />
+        <h3>Expert Team</h3>
+        <p>Certified guides ensure your safety and unforgettable experiences.</p>
       </div>
     </section>
-
   </main>
 
   <footer>
@@ -74,6 +73,5 @@
       <a href="https://instagram.com"><img src="images/instagram.svg" alt="Instagram" /></a>
     </div>
   </footer>
-
 </body>
 </html>
