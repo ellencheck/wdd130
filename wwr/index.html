@@ -3,75 +3,68 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="Welcome to White Water Rafting Co., your gateway to thrilling rafting adventures." />
-  <meta name="author" content="Alina Chekalova" />
-  <title>White Water Rafting | Home</title>
-
-  <!-- Основной CSS -->
-  <link rel="stylesheet" href="styles/rafting.css" />
-  <!-- Дополнительный CSS для home, чтобы не трогать остальные страницы -->
-  <link rel="stylesheet" href="styles/home.css" />
+  <title>WWR Rafting | Home</title>
+  <link rel="stylesheet" href="rafting.css" />
+  <link rel="stylesheet" href="home.css" />
 </head>
-<body>
+<body class="home-page">
+
+  <!-- Header и Навигация (копия с About Us для консистентности) -->
   <header>
-    <img src="images/wwr-logo.png" alt="Rafting Company Logo" />
-    <nav class="nav-menu">
-      <a href="index.html" class="active">Home</a>
-      <a href="about.html">About Us</a>
-      <a href="trips.html">Trips</a>
-      <a href="contact.html">Contact Us</a>
+    <h1>White Water Rafting Adventures</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html" aria-current="page">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="trips.html">Trips</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
     </nav>
   </header>
 
-  <main>
-    <!-- Hero Section -->
-    <section class="hero">
-      <img src="images/hero.jpg" alt="Rafting Adventure" />
-      <h1 class="hero-title">White Water Rafting Co.</h1>
+  <!-- Hero Image с абсолютным заголовком -->
+  <section class="hero">
+    <img src="images/hero-rafting.jpg" alt="Rafting adventure on the river" />
+    <h2>Experience the Thrill of White Water Rafting!</h2>
+  </section>
 
-      <!-- Newsletter Sign-up Form -->
-      <form class="newsletter-form" action="#" method="post" aria-label="Newsletter Sign Up">
-        <h2>Subscribe to Our Newsletter</h2>
-        <label for="name">Name:</label>
-        <input id="name" name="name" type="text" required />
-        <label for="email">Email:</label>
-        <input id="email" name="email" type="email" required />
-        <button type="submit" class="btn-green">Subscribe</button>
-      </form>
-    </section>
+  <!-- Newsletter Sign Up Form -->
+  <section class="newsletter">
+    <h3>Join Our Newsletter</h3>
+    <form action="#" method="post" novalidate>
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" placeholder="Your name" required />
 
-    <!-- Call to Action -->
-    <section class="call-to-action">
-      <p>Ready for your next adventure? <a href="trips.html" class="btn-green">Explore Our Trips</a></p>
-    </section>
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" placeholder="Your email" required />
 
-    <!-- CSS Grid Section -->
-    <section class="grid-info">
-      <div class="grid-item">
-        <img src="images/rafting1.jpg" alt="Rafting 1" />
-        <h3>Exciting Rapids</h3>
-        <p>Experience thrilling rapids for all skill levels with our expert guides.</p>
-      </div>
-      <div class="grid-item">
-        <img src="images/rafting2.jpg" alt="Rafting 2" />
-        <h3>Family Friendly</h3>
-        <p>Safe and fun trips for the whole family to enjoy the outdoors together.</p>
-      </div>
-      <div class="grid-item">
-        <img src="images/rafting3.jpg" alt="Rafting 3" />
-        <h3>Expert Team</h3>
-        <p>Certified guides ensure your safety and unforgettable experiences.</p>
-      </div>
-    </section>
-  </main>
+      <button type="submit">Subscribe</button>
+    </form>
+  </section>
 
+  <!-- Call to Action -->
+  <section class="call-to-action">
+    <a href="trips.html" class="btn">Explore Our Trips</a>
+  </section>
+
+  <!-- CSS Grid Layout с изображениями и описаниями -->
+  <section class="info-grid">
+    <article class="info-item">
+      <img src="images/rafting-paddle.jpg" alt="Rafting paddle" />
+      <h4>Our Purpose</h4>
+      <p>We are dedicated to providing unforgettable white water rafting adventures for all skill levels.</p>
+    </article>
+    <article class="info-item">
+      <img src="images/rafting-team.jpg" alt="Rafting team" />
+      <h4>Our Offerings</h4>
+      <p>Guided trips, safety training, and equipment rental to ensure a safe and thrilling experience.</p>
+    </article>
+  </section>
+
+  <!-- Footer -->
   <footer>
-    <p>&copy; 2025 White Water Rafting Co. | Alina Chekalova</p>
-    <div class="socialmedia">
-      <a href="https://facebook.com"><img src="images/facebook.svg" alt="Facebook" /></a>
-      <a href="https://twitter.com"><img src="images/twitter.svg" alt="Twitter" /></a>
-      <a href="https://instagram.com"><img src="images/instagram.svg" alt="Instagram" /></a>
-    </div>
+    <p>© 2025 White Water Rafting Adventures. All rights reserved.</p>
   </footer>
+
 </body>
 </html>
