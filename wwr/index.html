@@ -3,78 +3,42 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="Welcome to White Water Rafting - thrilling rafting adventures await you!" />
+  <meta name="description" content="Welcome to White Water Rafting Co., your gateway to thrilling rafting adventures." />
   <meta name="author" content="Alina Chekalova" />
   <title>White Water Rafting | Home</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700;900&family=Roboto:wght@400;700&display=swap"
-    rel="stylesheet"
-  />
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700;900&family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles/rafting.css" />
 </head>
 <body>
   <header>
     <img src="images/wwr-logo.png" alt="Rafting Company Logo" />
     <nav class="nav-menu">
-      <a href="index.html">Home</a>
+      <a href="index.html" class="active">Home</a>
       <a href="about.html">About Us</a>
       <a href="trips.html">Trips</a>
       <a href="contact.html">Contact Us</a>
     </nav>
   </header>
 
-  <main class="home-page">
-    <!-- Hero section -->
-    <section class="hero-section">
-      <img src="images/hero.jpg" alt="Rafting Adventure" class="hero-image" />
-      <h1 class="hero-title">White Water Rafting Co.</h1>
-    </section>
-
-    <!-- Newsletter + CTA -->
-    <section class="newsletter-cta">
-      <div class="newsletter">
-        <h2>Join Our Newsletter</h2>
-        <form action="#" method="post" class="newsletter-form">
-          <label for="name">Name</label>
-          <input type="text" id="name" name="name" required />
-          <label for="email">Email</label>
-          <input type="email" id="email" name="email" required />
-          <button type="submit">Subscribe</button>
-        </form>
-      </div>
-
-      <div class="cta">
-        <h2>Ready for Adventure?</h2>
-        <p>Discover the best rafting trips tailored just for you.</p>
-        <a href="trips.html" class="btn-primary">Explore Trips</a>
-      </div>
-    </section>
-
-    <!-- Grid content about rafting -->
-    <section class="info-grid">
+  <main>
+    <div class="hero">
+      <img src="images/hero.jpg" alt="Rafting Adventure" />
+      <h1>Welcome to White Water Rafting Co.</h1>
       <article>
-        <img src="images/rafting1.jpg" alt="Los Dientes del Diablo" />
-        <h3>Thrilling Rapids</h3>
-        <p>
-          Experience the rush of the wild rivers like Los Dientes del Diablo, where adventure and nature meet.
-        </p>
+        <img src="images/happy-client.jpg" alt="Happy client enjoying rafting" />
+        <p>Experience the thrill of white water rafting with us! Whether you're a beginner or an experienced rafter, we offer exciting trips tailored to your skill level. Our team is dedicated to making your adventure safe, memorable, and full of fun.</p>
       </article>
-      <article>
-        <img src="images/rafting2.jpg" alt="Big Mallard" />
-        <h3>Family Friendly</h3>
-        <p>
-          Safe and fun trips for all ages. Bring your family and create unforgettable memories on the Big Mallard route.
-        </p>
-      </article>
-      <article>
-        <img src="images/rafting3.jpg" alt="Half Day Adventure" />
-        <h3>Half Day Adventures</h3>
-        <p>
-          Perfect for a quick escape! Join our half-day trips for a refreshing taste of white water excitement.
-        </p>
-      </article>
+    </div>
+
+    <section class="featured-trips">
+      <h2>Featured Trips</h2>
+      <figure><img src="images/rafting1.jpg" alt="Rafting 1" /><figcaption>Los Dientes del Diablo</figcaption></figure>
+      <figure><img src="images/rafting2.jpg" alt="Rafting 2" /><figcaption>Big Mallard</figcaption></figure>
+      <figure><img src="images/rafting3.jpg" alt="Rafting 3" /><figcaption>Half Day Adventure</figcaption></figure>
+      <figure><img src="images/rafting4.jpg" alt="Rafting 4" /><figcaption>Rapid Rush</figcaption></figure>
+      <figure><img src="images/rafting5.jpg" alt="Rafting 5" /><figcaption>Thunder River</figcaption></figure>
     </section>
   </main>
 
