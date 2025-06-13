@@ -331,23 +331,18 @@ footer {
   object-fit: cover;
   display: block;
 }
-
 .home-page .hero h2 {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  color: #2c6a20;
   font-family: 'Merriweather', serif;
-  font-size: 3rem;
-  background-color: rgba(255, 255, 255, 0.85);
-  padding: 16px 32px;
-  border-radius: 12px;
+  font-size: 4rem;
+  color: white;
   text-align: center;
-  max-width: 80%;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.6);
+  margin: 0;
 }
-
 /* NEWSLETTER SECTION */
 .home-page .newsletter {
   max-width: 600px;
