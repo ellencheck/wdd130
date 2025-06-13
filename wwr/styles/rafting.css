@@ -429,11 +429,13 @@ footer {
   border-radius: 12px;
   color: white;
   max-width: 90%;
+  box-sizing: border-box;
 }
 
 .home-page .hero .hero-text h1 {
   font-size: 2.5rem;
   margin: 0;
+  font-family: 'Merriweather', serif;
 }
 
 /* Адаптив */
@@ -445,4 +447,3 @@ footer {
   .home-page .hero .hero-text h1 {
     font-size: 1.6rem;
   }
-}
