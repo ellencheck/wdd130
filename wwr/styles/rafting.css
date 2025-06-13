@@ -306,61 +306,58 @@ footer {
   gap: 0.5rem;
   margin-top: 1rem;
 }
-/* home.css - стили для страницы HomePage */
-
+/* Главная страница — обёртка */
 .home-page {
   font-family: 'Roboto', sans-serif;
   color: #2c6a20;
   background-color: #f7fcf7;
   margin: 0;
-  padding: 0;
+  padding: 0 20px; /* немного отступов по бокам */
 }
 
+/* HERO SECTION */
 .home-page .hero {
   position: relative;
-  width: 100vw;
-  max-width: 100%;
-  height: 450px;
-  margin: 0;
-  padding: 0;
+  width: 100%;
+  max-height: 450px;
   overflow: hidden;
-  left: 50%;
-  right: 50%;
-  margin-left: -50vw;
-  margin-right: -50vw;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(44, 106, 32, 0.2);
+  margin-bottom: 40px;
 }
 
 .home-page .hero img {
   width: 100%;
-  height: 100%;
-  object-fit: cover;
+  height: 450px;
+  object-fit: cover; /* красиво масштабируем изображение */
   display: block;
 }
 
+/* Текст на hero, ровно по центру */
 .home-page .hero h2 {
   position: absolute;
-  top: 20px;
-  left: 0;
-  width: 100%;
-  text-align: center;
-  background-color: rgba(38, 70, 83, 0.85);
-  color: #fff;
-  font-family: 'Merriweather', serif;
-  font-size: 2.4rem;
-  padding: 16px 0;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   margin: 0;
-  font-weight: 700;
-  user-select: none;
-  box-sizing: border-box;
+  padding: 20px 40px;
+  background-color: rgba(38, 70, 83, 0.85);
+  color: white;
+  font-family: 'Merriweather', serif;
+  font-size: 2.5rem;
+  border-radius: 10px;
+  text-align: center;
+  max-width: 90%;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
 }
 
 /* NEWSLETTER SECTION */
 .home-page .newsletter {
   max-width: 600px;
-  margin: 60px auto;
+  margin: 0 auto 60px;
   background-color: #e9f5ea;
-  padding: 30px;
-  border-radius: 10px;
+  padding: 30px 40px;
+  border-radius: 12px;
   box-shadow: 0 0 12px rgba(44, 106, 32, 0.25);
 }
 
@@ -368,14 +365,14 @@ footer {
   margin-top: 0;
   color: #2c6a20;
   text-align: center;
-  font-size: 1.8rem;
+  font-size: 2rem;
   font-family: 'Merriweather', serif;
 }
 
 .home-page .newsletter form {
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  gap: 18px;
   font-family: 'Roboto', sans-serif;
 }
 
@@ -385,10 +382,10 @@ footer {
 }
 
 .home-page .newsletter input {
-  padding: 10px 12px;
-  font-size: 1rem;
+  padding: 12px 15px;
+  font-size: 1.1rem;
   border: 2px solid #2c6a20;
-  border-radius: 6px;
+  border-radius: 8px;
 }
 
 .home-page .newsletter input:focus {
@@ -398,13 +395,13 @@ footer {
 }
 
 .home-page .newsletter button {
-  padding: 14px;
+  padding: 16px;
   background-color: #2c6a20;
   color: white;
   font-weight: 700;
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   border: none;
-  border-radius: 6px;
+  border-radius: 8px;
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
@@ -413,7 +410,7 @@ footer {
   background-color: #1b4113;
 }
 
-/* CALL TO ACTION */
+/* CALL TO ACTION BUTTON */
 .home-page .call-to-action {
   text-align: center;
   margin: 60px 0 80px;
@@ -423,57 +420,60 @@ footer {
   background-color: #2c6a20;
   color: white;
   font-weight: 700;
-  font-size: 1.3rem;
-  padding: 16px 48px;
-  border-radius: 10px;
+  font-size: 1.4rem;
+  padding: 18px 56px;
+  border-radius: 12px;
   text-decoration: none;
   font-family: 'Roboto', sans-serif;
   transition: background-color 0.3s ease;
+  display: inline-block;
 }
 
 .home-page .call-to-action .btn:hover {
   background-color: #1b4113;
 }
 
-/* INFO GRID */
+/* INFO GRID — карточки */
 .home-page .info-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* адаптивные колонки */
-  gap: 30px; /* расстояние между карточками */
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 40px;
   max-width: 1000px;
   margin: 0 auto 80px;
-  padding: 0 20px;
+  padding: 0 10px;
 }
 
 .home-page .info-item {
   background-color: #dff0d8;
-  border-radius: 12px;
-  padding: 20px;
-  box-shadow: 0 0 10px rgba(44, 106, 32, 0.15);
+  border-radius: 14px;
+  padding: 30px 25px;
+  box-shadow: 0 0 15px rgba(44, 106, 32, 0.15);
   text-align: center;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  height: 100%; /* чтобы карточки одинаковой высоты в сетке */
+  transition: box-shadow 0.3s ease;
+}
+
+.home-page .info-item:hover {
+  box-shadow: 0 0 20px rgba(38, 105, 25, 0.3);
 }
 
 .home-page .info-item img {
-  width: 100%;
-  height: 180px; /* фиксированная высота для всех картинок */
-  object-fit: cover; /* чтобы картинка заполняла блок и не искажалась */
-  border-radius: 10px;
-  margin-bottom: 15px;
+  max-width: 100%;
+  border-radius: 12px;
+  margin-bottom: 20px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .home-page .info-item h4 {
   font-family: 'Merriweather', serif;
   color: #1b4113;
-  margin-bottom: 10px;
-  font-size: 1.4rem;
+  margin-bottom: 14px;
+  font-size: 1.5rem;
 }
 
 .home-page .info-item p {
-  font-size: 1rem;
+  font-size: 1.1rem;
   color: #2c6a20;
-  flex-grow: 1; /* чтобы текст занимал доступное пространство */
+  line-height: 1.4;
 }
