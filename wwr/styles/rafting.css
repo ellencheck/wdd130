@@ -421,3 +421,43 @@ footer {
 .home-page .info-item p {
   color: #333;
 }
+.home-page .hero {
+  position: relative;
+  max-width: 100%;
+  overflow: hidden;
+}
+
+.home-page .hero img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.home-page .hero .hero-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 20px 40px;
+  border-radius: 12px;
+  color: white;
+  max-width: 90%;
+}
+
+.home-page .hero .hero-text h1 {
+  font-size: 2.5rem;
+  margin: 0;
+}
+
+/* Адаптив */
+@media (max-width: 600px) {
+  .home-page .hero .hero-text {
+    padding: 15px 20px;
+  }
+
+  .home-page .hero .hero-text h1 {
+    font-size: 1.6rem;
+  }
+}
