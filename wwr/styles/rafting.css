@@ -306,13 +306,6 @@ footer {
   gap: 0.5rem;
   margin-top: 1rem;
 }
-.home-page {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 /* HERO SECTION */
 .home-page .hero {
   position: relative;
@@ -326,7 +319,7 @@ footer {
   display: block;
 }
 
-.home-page .hero h2 {
+.home-page .hero h1 {
   position: absolute;
   top: 15%; /* сдвинуто вверх с 50% */
   left: 50%;
@@ -342,7 +335,7 @@ footer {
 
 /* Адаптив для маленьких экранов */
 @media (max-width: 600px) {
-  .home-page .hero h2 {
+  .home-page .hero h1 {
     font-size: 1.8rem;
     padding: 15px 20px;
     top: 10%;
