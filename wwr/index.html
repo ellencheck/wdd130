@@ -11,48 +11,15 @@
   <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles/rafting.css" />
   <link rel="stylesheet" href="styles/home.css" />
-  <style>
-    .home-page {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
-    /* HERO SECTION */
-    .home-page .hero {
-      position: relative;
-      max-width: 100%;
-      overflow: hidden;
-    }
-
-    .home-page .hero img {
-      width: 100%;
-      height: auto;
-      display: block;
-    }
-
-    .home-page .hero h2 {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      color: white;
-      background-color: rgba(0, 0, 0, 0.5);
-      padding: 20px 40px;
-      font-size: 2.5rem;
-      text-align: center;
-      border-radius: 10px;
-    }
-
-    /* Остальные стили по необходимости */
-  </style>
 </head>
 <body class="home-page">
   <header>
-    <!-- Навигация, логотип и прочее -->
-    <nav>
-      <!-- nav content -->
+    <img src="images/wwr-logo.png" alt="Rafting Company Logo" />
+    <nav class="nav-menu">
+      <a href="index.html">Home</a>
+      <a href="about.html">About Us</a>
+      <a href="trips.html">Trips</a>
+      <a href="contact.html">Contact Us</a>
     </nav>
   </header>
 
@@ -60,15 +27,57 @@
     <!-- Hero Section -->
     <section class="hero">
       <img src="images/hero.jpg" alt="Rafting Adventure" />
-      <h2>Discover the Thrill of White Water Rafting</h2>
+      <div class="hero-text">
+        <h1>Discover the Thrill of White Water Rafting</h1>
+      </div>
     </section>
 
-    <!-- Далее остальной контент -->
+    <!-- Info Boxes Section -->
+    <section class="info-grid">
+      <div class="info-item">
+        <img src="images/rafting-info1.webp" alt="Rafting with Friends" />
+        <h4>Unforgettable Memories</h4>
+        <p>Experience wild rivers, stunning nature, and great company on every trip.</p>
+      </div>
+      <div class="info-item">
+        <img src="images/rafting-info2.webp" alt="Guided Rafting Experience" />
+        <h4>Professional Guides</h4>
+        <p>Our team ensures a safe and exciting journey for all experience levels.</p>
+      </div>
+      <div class="info-item">
+        <img src="images/rafting-fun.webp" alt="Fun on the River" />
+        <h4>Fun for Everyone</h4>
+        <p>From beginners to thrill-seekers — we have a rafting trip for you!</p>
+      </div>
+    </section>
 
+    <!-- Newsletter Sign Up -->
+    <section class="newsletter">
+      <h3>Sign Up for Our Adventure Newsletter</h3>
+      <form>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required />
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required />
+
+        <button type="submit">Subscribe</button>
+      </form>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="call-to-action">
+      <a href="trips.html" class="btn">Explore Our Trips</a>
+    </section>
   </main>
 
   <footer>
     <p>&copy; 2025 White Water Rafting Co. | Alina Chekalova</p>
+    <div class="socialmedia">
+      <a href="https://facebook.com"><img src="images/facebook.svg" alt="Facebook" /></a>
+      <a href="https://twitter.com"><img src="images/twitter.svg" alt="Twitter" /></a>
+      <a href="https://instagram.com"><img src="images/instagram.svg" alt="Instagram" /></a>
+    </div>
   </footer>
 </body>
 </html>
