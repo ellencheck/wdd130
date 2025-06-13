@@ -318,21 +318,6 @@ footer {
   height: auto;
   display: block;
 }
-
-.home-page .hero h1 {
-  position: absolute;
-  top: 15%; /* сдвинуто вверх с 50% */
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: white;
-  background-color: rgba(0, 0, 0, 0.5);
-  padding: 20px 40px;
-  font-size: 2.5rem;
-  text-align: center;
-  border-radius: 10px;
-  max-width: 90%;
-}
-
 /* Адаптив для маленьких экранов */
 @media (max-width: 600px) {
   .home-page .hero h1 {
