@@ -11,7 +11,6 @@
   <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700;900&family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles/rafting.css" />
   <style>
-    /* Additional styles for Trips page layout */
     main {
       max-width: 1200px;
       margin: 2rem auto;
@@ -33,7 +32,6 @@
     .cta-contact a:hover {
       background-color: #005fa3;
     }
-
     .trip-descriptions {
       display: flex;
       gap: 2rem;
@@ -70,11 +68,10 @@
       line-height: 1.4;
       color: #333;
     }
-
     table.trip-table {
       width: 100%;
       border-collapse: collapse;
-      margin-bottom: 3rem;
+      margin: 1.5rem 0 3rem 0;
     }
     table.trip-table thead {
       background-color: #264c65;
@@ -93,7 +90,6 @@
     table.trip-table tbody tr:hover {
       background-color: #e1f0ff;
     }
-
     footer .wireframe-link {
       margin-top: 0.5rem;
       font-size: 0.9rem;
@@ -123,7 +119,7 @@
       <p>Ready for your next adventure? <a href="contact.html">Contact Us Today!</a></p>
     </div>
 
-    <div class="trip-descriptions">
+    <section class="trip-descriptions">
       <article class="trip-card">
         <img src="images/trip-rapids.jpeg" alt="Rapid Rush Trip" />
         <div class="trip-card-content">
@@ -149,15 +145,11 @@
       </article>
     </section>
 
-    <section>
-      <h2>Available Trips Overview</h2>
-    <caption>
-     <table class="trip-table">
-  <caption style="padding-bottom: 15px;">
-    Details of rafting trips offered including difficulty, duration, and price
-  </caption>
-  <thead>
-    <tr>
+    <section aria-label="Trip Pricing Table">
+      <table class="trip-table">
+        <caption style="padding-bottom: 15px;">Details of rafting trips offered including difficulty, duration, and price</caption>
+        <thead>
+          <tr>
             <th>Trip Name</th>
             <th>Difficulty Level</th>
             <th>Duration</th>
